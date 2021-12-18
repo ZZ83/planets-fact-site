@@ -1,0 +1,26 @@
+//Flexbox
+%flex {
+	display: flex;
+}
+%flex-ai-c {
+	align-items: center;
+}
+%flex-jc-c {
+	justify-content: center;
+}
+%flex-jc-sb {
+	justify-content: space-between;
+}
+%flex-jc-sa {
+	justify-content: space-around;
+}
+%flex-d-c {
+	flex-direction: column;
+}
+
+
+// Alignment
+%center-block {
+	margin: 0 auto;
+}
+

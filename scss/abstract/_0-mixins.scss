@@ -1,0 +1,25 @@
+// BEM selectors
+@mixin ele($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+@mixin mod($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+// Media queries
+@mixin mq($break) {
+    @if $break == "medium" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    }
+}
