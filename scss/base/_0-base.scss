@@ -1,0 +1,42 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+*, 
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$primary-text-color;
+}
+
+ul {
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none
+}
+
+h4 {
+    color: variables.$secondary-text-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin:  0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+    // @include mixins.mq(medium) {
+    //     width: 90%;
+    // }
+}

@@ -1,0 +1,95 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+.primary-navigation {
+    &__inner {
+        top: 76px;
+        left: -100%;
+        width:  100%;
+        height: auto;
+        position: absolute; 
+        padding: 0 2.5%;
+        transition: all 0.5s;
+        background-color: variables.$primary-color;
+        @include mixins.mq(medium) {
+            width: 100%;
+            padding: 0;
+            top: 0;
+            right: initial;
+            height: auto;
+            position: initial;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+        }
+        @include mixins.mq(large) {
+            width: 80%;
+            margin-left: auto;
+        }
+    }
+    &__inner--open {
+        left: 0;
+    }
+    @include mixins.mq(medium) {
+        width: 100%;
+    }
+}
+
+.nav-list-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size:   15px;
+    line-height: 15px;
+    border-bottom: 1px solid variables.$secondary-text-color;
+    &:last-child {
+        border-bottom: none;
+    }
+    &__planet {
+        width:  20px;
+        height: 20px;
+        margin-right: 2rem;
+        @include mixins.mq(medium) {
+            display: none;
+        }
+    }
+    &__link {
+        font-size: 0.937rem;
+        letter-spacing: 2.5px;
+        line-height: 76px;
+        @include mixins.mq(medium) {
+            color: variables.$secondary-text-color;
+        }
+        @include mixins.mq(large) {
+            border-top: 4px solid transparent;
+        }
+        &:hover {
+            @include mixins.mq(large) {
+                color: variables.$primary-text-color;
+            }
+        }
+    }
+    @each $name, $value in variables.$colors {
+        &__link--#{$name} {
+            &:hover {
+                @include mixins.mq(large) {
+                    border-top: 4px solid $value; 
+                }
+            }
+        }
+    }
+    &__icon {
+        margin-left: auto;
+        margin-right: 0.7rem;
+        @include mixins.mq(medium) {
+            display: none;
+        }
+    }
+    @include mixins.mq(medium) {
+        border: none;
+    }
+}
+
+
