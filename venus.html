@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Frontend Mentor | Planets fact site</title>
+	</head>
+	<body>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Venus
+		<header class="header wrapper">
 
-  <!-- Overview Content Start -->
+			<div class="header__logo">
+				<a href="#"><strong >THE PLANETS</strong></a>
+			</div>
 
-  Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.
+			<button class="mobile-nav-button" aria-controls="main-nav" aria-expanded="false" onclick="openSlideMenu()">
+				<svg class="mobile-nav-button__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+					<g><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g>
+				</svg>
+			</button>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
+			<nav class="primary-navigation">
+				<ul class="primary-navigation__inner">
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
+						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/venus/planet-venus.svg" alt="Venus">
+						<a   class="nav-list-item__link nav-list-item__link--venus nav-list-item__link--venus-active" href="venus.html">VENUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
+						<a   class="nav-list-item__link nav-list-item__link--earth" href="earth.html">EARTH</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mars/planet-mars.svg" alt="Mars">
+						<a   class="nav-list-item__link nav-list-item__link--mars" href="">MARS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/jupiter/planet-jupiter.svg" alt="Jupiter">
+						<a   class="nav-list-item__link nav-list-item__link--jupiter" href="">JUPITER</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/saturn/planet-saturn.svg" alt="Saturn">
+						<a   class="nav-list-item__link nav-list-item__link--saturn" href="">SATURN</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/uranus/planet-uranus.svg" alt="Uranus">
+						<a   class="nav-list-item__link nav-list-item__link--uranus" href="">URANUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/neptune/planet-neptune.svg" alt="Neptune">
+						<a   class="nav-list-item__link nav-list-item__link--neptune" href="">NEPTUNE</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+				</ul>
+			</nav>
 
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  243 Days
-
-  Revolution Time
-  224.7 Days
-
-  Radius
-  6,051.8 KM
-
-  Average Temp.
-  471°c
-</body>
+		</header>
+		<div class="underline"></div>
+		<script src="script.js"></script>
+	</body>
 </html>

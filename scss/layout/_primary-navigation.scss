@@ -23,7 +23,7 @@
             background-color: transparent;
         }
         @include mixins.mq(large) {
-            width: 80%;
+            width: 60%;
             margin-left: auto;
         }
     }
@@ -60,6 +60,7 @@
         letter-spacing: 2.5px;
         line-height: 76px;
         @include mixins.mq(medium) {
+            font-size: 0.772rem;
             color: variables.$secondary-text-color;
         }
         @include mixins.mq(large) {
@@ -73,11 +74,20 @@
     }
     @each $name, $value in variables.$colors {
         &__link--#{$name} {
+
             &:hover {
                 @include mixins.mq(large) {
                     border-top: 4px solid $value; 
                 }
             }
+        }
+    }
+    @each $name, $value in variables.$colors {
+        &__link--#{$name}-active {
+            @include mixins.mq(large) {
+                color: variables.$primary-text-color;
+                border-top: 4px solid $value; 
+            } 
         }
     }
     &__icon {

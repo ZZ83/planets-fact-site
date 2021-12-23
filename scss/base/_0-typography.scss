@@ -2,8 +2,6 @@
 @use '../abstract/variables';
 
 body {
-    color: variables.$primary-text-color;
-    background-color: variables.$primary-color;
     font-family: 'Spartan', sans-serif;
 }
 
@@ -20,6 +18,8 @@ strong {
 
 h1 {
     font-size: 2.479rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     @include mixins.mq(medium) {
         font-size: 3.012rem; 
     }
@@ -45,6 +45,11 @@ h4 {
     @include mixins.mq(medium) {
         font-size: 0.723rem;
     } 
+}
+
+P { 
+    font-size: 0.878rem;
+    line-height: 25px;
 }
 
 strong {
