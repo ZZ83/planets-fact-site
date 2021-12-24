@@ -1,0 +1,83 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+@use '../abstract/utilities';
+
+
+.secondary-navigation {
+    padding: 0 5%;
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: space-between; 
+        @include mixins.mq(medium) {
+            flex-direction: column;  
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        @include mixins.mq(medium) {
+            height: 50px;
+            padding-left: 1rem;
+            border: 2px solid variables.$secondary-color;
+        }
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 0.595rem;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        line-height: 42px;
+        border-top:    6px solid transparent;
+        border-bottom: 6px solid transparent;
+        color: variables.$secondary-text-color;
+        @include mixins.mq(medium) {
+            color: variables.$primary-text-color;
+        }
+    }
+    &__span-1 {
+        color: variables.$secondary-text-color;
+    }
+    &__span-1,
+    &__span-2 {
+        display: none;
+        @include mixins.mq(medium) {
+            display: initial;
+        }
+    }
+    // &__item--mercury {}
+    @each $name, $value in variables.$colors {
+        &__item--#{$name} {
+            a {
+                @extend %white;
+                border-bottom: 6px solid $value;
+                @include mixins.mq(medium) {
+                    border-bottom: 6px solid transparent;
+                }
+            }
+            @include mixins.mq(medium) {
+                background-color: $value;
+                border-color: transparent;
+            }
+        }
+    }
+    @include mixins.mq(medium) {
+        height: 175px;
+        margin-top: 50px;
+        padding: 0;
+    }
+    @include mixins.mq(large) {
+        margin: 0;
+    }
+}
+
+.secondary-navigation-underline {
+    left: 0;
+    right: 0;
+    top: 129px;
+    position: absolute;
+    border-bottom: 1px solid variables.$secondary-text-color;
+    @include mixins.mq(medium) {
+        display: none;
+    }
+}

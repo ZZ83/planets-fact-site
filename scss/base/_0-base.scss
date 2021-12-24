@@ -6,15 +6,10 @@
 *:before {
     box-sizing: border-box;
 }
-html,
-body {
-    height:100%;
-}
 
 body {
     color: variables.$primary-text-color;
     background-color: variables.$primary-color;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

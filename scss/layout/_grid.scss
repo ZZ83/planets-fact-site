@@ -3,6 +3,7 @@
 
 .main {
     //background-color: rgba(255, 0, 0, 0.473);
+    
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -22,12 +23,13 @@
         ;
     }
     @include mixins.mq(large) {
-        width: 75%;
+        width: 72%;
+        margin-top: 7rem;
         grid-template-areas:
             "c c c c c c c . d d d d"
             "c c c c c c c . a a a a"
         ;
-        background-color: rgba(186, 39, 231, 0.089);
+        // background-color: rgba(186, 39, 231, 0.089);
     }
 }
 
@@ -51,206 +53,49 @@
     grid-area: d;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.secondary-navigation {
-    padding: 0 5%;
+.description {
+    margin: auto;
+    text-align: center;
     @include mixins.mq(medium) {
-        height: 220px;
-        margin-top: 50px;
-        padding: 0;
-    }
-
-    @include mixins.mq(large) {
-        margin: 0;
-    }
-    &__list {
-        height: 100%;
-        display: flex;
-        justify-content: space-between; 
-        @include mixins.mq(medium) {
-            flex-direction: column;  
-        }
-    }
-
-    &__item {
-     
-        @include mixins.mq(medium) {
-            display: flex;
-            align-items: center;
-            height: 48px;
-            padding-left: 1rem;
-            border: 2px solid variables.$secondary-color;
-
-            &:hover { 
-               
-    
-                background-color: gray;
-            }
-        }
+        text-align: left;
     }
     &__link {
         font-weight: 700;
-        font-size: 0.558rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        line-height: 42px;
-        border-top: 4px solid transparent;
-        border-bottom: 4px solid transparent;
         color: variables.$secondary-text-color;
-        &:hover { 
-            color: variables.$primary-text-color;
-            border-bottom: 4px solid teal;
-        }
         span {
-            display: none;
-            @include mixins.mq(medium) {
-                display: initial;
-            }
-        }
-        @include mixins.mq(medium) {
-            color: variables.$primary-text-color;
-        }
-        
-    }
-}
-
-.secondary-navigation-underline {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid variables.$secondary-text-color;
-    @include mixins.mq(medium) {
-        display: none;
-    }
-}
-
-
-
-.planet {
-
-    height: 300px;
-    display: flex;
-    @include mixins.mq(medium) {
-       height: 450px;
-    }
-    @include mixins.mq(large) {
-        height: 660px;
-    }
-    &__overview {
-        
-        width:  115px;
-        height: 115px;
-        margin: auto;
-        @include mixins.mq(medium) {
-            width:  185px;
-            height: 185px;
-        }
-        @include mixins.mq(large) {
-            width:  290px;
-            height: 290px;  
+            font-weight: 400;
         }
     }
-    &__internal {
-        display: none;
-    }
-    &__geology {
-        display: none;
-    }
-}
-
-
-.description {
-    text-align: center;
-    margin: auto;
-    @include mixins.mq(medium) {
-        text-align: left;
-        
-    }
-    @include mixins.mq(large) {
-       
-    }
-    &__overview {
+    &__summary {
         margin-bottom: 3rem;
         p {
             margin: 1.2rem 0 3rem;
-            
+            @include mixins.mq(medium) {
+                margin-bottom: 2rem;
+            }
         }
         @include mixins.mq(medium) {
             margin-top: 2rem;
         }
     }
-    &__internal {
-        display: none;
-    }
-    &__geology {
-        display: none;
-    }
 }
-
-
-
-
 
 .stats {
     width: 90%;
     height: 250px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+   
     @include mixins.mq(medium) {
         height: auto;
         flex-direction: row;
     }
     @include mixins.mq(large) {
-        width: 75%;
+        width: 72%;
         padding-top: 5rem;
     }
-
     &__item {
         height: 50px;
         padding: 0 1rem;
@@ -265,9 +110,8 @@
             align-items: flex-start;
             justify-content: center;
         }
-
         @include mixins.mq(large) {
-           height: 130px;
+           height: 120px;
         }
     }
     &__heading {
@@ -286,7 +130,4 @@
             font-size: 2.479rem;
         }
     }
-
-
-    
 }

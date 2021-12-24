@@ -1,3 +1,5 @@
+@use '../abstract/variables';
+
 //Flexbox
 %flex {
 	display: flex;
@@ -18,9 +20,11 @@
 	flex-direction: column;
 }
 
-
-// Alignment
 %center-block {
 	margin: 0 auto;
+}
+
+%white {
+	color: variables.$primary-text-color;
 }
 

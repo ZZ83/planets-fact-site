@@ -1,8 +1,10 @@
 @use '../abstract/mixins';
 @use '../abstract/variables';
+@use '../abstract/utilities';
 
 .primary-navigation {
     &__inner {
+        z-index: 1;
         top: 76px;
         left: -100%;
         width:  100%;
@@ -74,7 +76,6 @@
     }
     @each $name, $value in variables.$colors {
         &__link--#{$name} {
-
             &:hover {
                 @include mixins.mq(large) {
                     border-top: 4px solid $value; 
