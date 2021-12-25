@@ -11,19 +11,16 @@
 		<title>Frontend Mentor | Planets fact site</title>
 	</head>
 	<body>
-
+		<!-- * Header Section * -->
 		<header class="header wrapper">
-
 			<div class="header__logo">
-				<a href="#"><strong >THE PLANETS</strong></a>
+				<strong >THE PLANETS</strong>
 			</div>
-
 			<button class="mobile-nav-button" aria-controls="main-nav" aria-expanded="false" onclick="openSlideMenu()">
 				<svg class="mobile-nav-button__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="17">
 					<g><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g>
 				</svg>
 			</button>
-
 			<nav class="primary-navigation">
 				<ul class="primary-navigation__inner">
 					<li class="nav-list-item">
@@ -38,7 +35,7 @@
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
-						<a   class="nav-list-item__link nav-list-item__link--earth nav-list-item__link--earth-active" href="earth.html">EARTH</a>
+						<a   class="nav-list-item__link nav-list-item__link--earth nav-list-item__link--earth-active" href="">EARTH</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -68,9 +65,54 @@
 					</li>
 				</ul>
 			</nav>
-
 		</header>
-		<div class="underline"></div>
+		<div class="header-underline"></div>
+		<!-- * Main Section * -->
+		<main>
+			<div class="main">
+				<!-- * Secondary Navigation * -->
+				<nav class="secondary-navigation a">
+					<ul class="secondary-navigation__list">
+						<li><a class="secondary-navigation__link earth" href="earth.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link"       href="earth-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link"       href="earth-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+					</ul>
+				</nav>
+				<div class="secondary-navigation-underline b"></div>
+				<!-- * Planet Section * -->
+				<div class="planet c">
+					<img class="planet__overview planet__overview--earth" src="/images/earth/planet-earth.svg" alt="Earth">
+				</div>
+				<!-- * Description Section * -->
+				<section  class="description d">
+					<h1>Earth</h1>
+					<!-- ? Overview Content ? -->
+					<div class="description__summary">
+						<p>Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Earth" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+					</div>
+				</section>
+			</div>
+			<!-- * Stats Section * -->
+			<div class="stats">
+				<div class="stats__item">
+					<h4 class="stats__heading">Rotation Time</h4>
+					<h2 class="stats__subheading">0.99 Days</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Revolution Time</h4>
+					<h2 class="stats__subheading">365.26 Days</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Radius</h4>
+					<h2 class="stats__subheading">6,371 KM</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Average Temp.</h4>
+					<h2 class="stats__subheading">16°c</h2>
+				</div>
+			</div>
+		</main>
 		<script src="script.js"></script>
 	</body>
 </html>

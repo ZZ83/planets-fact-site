@@ -522,6 +522,27 @@ strong {
     top: 67.5%;
   }
 }
+.planet__overview--earth {
+  width: 175px;
+  height: 175px;
+}
+@media (min-width: 768px) {
+  .planet__overview--earth {
+    width: 285px;
+    height: 285px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__overview--earth {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__surface--earth {
+    top: 68%;
+  }
+}
 
 .header {
   height: 75px;
