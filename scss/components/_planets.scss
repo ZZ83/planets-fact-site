@@ -27,6 +27,7 @@
         }
     }
 
+    // Mercury
     &__overview--mercury {
             width:  115px;
             height: 115px;
@@ -44,6 +45,34 @@
             top: 70%;
         }
     }
+
+    // Venus
+    &__overview--venus {
+            width:  155px;
+            height: 155px;
+        @include mixins.mq(medium) {
+            width:  255px;
+            height: 255px;
+        }
+        @include mixins.mq(large) {
+            width:  400px;
+            height: 400px;  
+        }
+    }
+    &__surface--venus {
+        @include mixins.mq(large) {
+            top: 67.5%;
+        }
+    }
 }
 
-
+// $image-size: (
+//     mercury: 112px 185px 290px,
+//     venus:   155px 255px 400px,
+//     earth:   175px 285px 450px,
+//     mars:    130px 215px 335px,
+//     jupiter: 225px 370px 580px,
+//     saturn:  255px 420px 665px,
+//     uranus:  175px 290px 460px,
+//     neptune: 175px 285px 450px,
+// );7

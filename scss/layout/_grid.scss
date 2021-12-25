@@ -1,9 +1,7 @@
 @use '../abstract/mixins';
 @use '../abstract/variables';
 
-.main {
-    //background-color: rgba(255, 0, 0, 0.473);
-    
+.main { 
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -29,27 +27,21 @@
             "c c c c c c c . d d d d"
             "c c c c c c c . a a a a"
         ;
-        // background-color: rgba(186, 39, 231, 0.089);
     }
 }
 
 .a {
-    //background-color: orange;
     grid-area: a;
 }
-
 .b {
-    //background-color: purple;
     grid-area: b;
 }
 
 .c {
-    //background-color: green;
     grid-area: c;
 }
 
 .d {
-    //background-color: lightblue;
     grid-area: d;
 }
 
@@ -87,7 +79,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
     @include mixins.mq(medium) {
         height: auto;
         flex-direction: row;
@@ -95,6 +86,7 @@
     @include mixins.mq(large) {
         width: 72%;
         padding-top: 5rem;
+        margin-bottom: 2rem;
     }
     &__item {
         height: 50px;
