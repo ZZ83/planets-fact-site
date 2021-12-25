@@ -543,6 +543,27 @@ strong {
     top: 68%;
   }
 }
+.planet__overview--mars {
+  width: 130px;
+  height: 130px;
+}
+@media (min-width: 768px) {
+  .planet__overview--mars {
+    width: 215px;
+    height: 215px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__overview--mars {
+    width: 335px;
+    height: 335px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__surface--mars {
+    top: 68%;
+  }
+}
 
 .header {
   height: 75px;

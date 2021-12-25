@@ -1,63 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Mars
-
-  <!-- Overview Content Start -->
-
-  Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Frontend Mentor | Planets fact site</title>
+	</head>
+	<body>
+		<!-- * Header Section * -->
+		<header class="header wrapper">
+			<div class="header__logo">
+				<strong >THE PLANETS</strong>
+			</div>
+			<button class="mobile-nav-button" aria-controls="main-nav" aria-expanded="false" onclick="openSlideMenu()">
+				<svg class="mobile-nav-button__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+					<g><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g>
+				</svg>
+			</button>
+			<nav class="primary-navigation">
+				<ul class="primary-navigation__inner">
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
+						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/venus/planet-venus.svg" alt="Venus">
+						<a   class="nav-list-item__link nav-list-item__link--venus" href="venus.html">VENUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
+						<a   class="nav-list-item__link nav-list-item__link--earth" href="earth.html">EARTH</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mars/planet-mars.svg" alt="Mars">
+						<a   class="nav-list-item__link nav-list-item__link--mars nav-list-item__link--mars-active" href="mars.html">MARS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/jupiter/planet-jupiter.svg" alt="Jupiter">
+						<a   class="nav-list-item__link nav-list-item__link--jupiter" href="jupiter.html">JUPITER</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/saturn/planet-saturn.svg" alt="Saturn">
+						<a   class="nav-list-item__link nav-list-item__link--saturn" href="saturn.html">SATURN</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/uranus/planet-uranus.svg" alt="Uranus">
+						<a   class="nav-list-item__link nav-list-item__link--uranus" href="uranus.html">URANUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/neptune/planet-neptune.svg" alt="Neptune">
+						<a   class="nav-list-item__link nav-list-item__link--neptune" href="neptune.html">NEPTUNE</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="header-underline"></div>
+		<!-- * Main Section * -->
+		<main>
+			<div class="main">
+				<!-- * Secondary Navigation * -->
+				<nav class="secondary-navigation a">
+					<ul class="secondary-navigation__list">
+						<li><a class="secondary-navigation__link mars" href="mars.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link"      href="mars-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link"      href="mars-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+					</ul>
+				</nav>
+				<div class="secondary-navigation-underline b"></div>
+				<!-- * Planet Section * -->
+				<div class="planet c">
+					<img class="planet__overview planet__overview--mars" src="/images/mars/planet-mars.svg" alt="Mars">
+				</div>
+				<!-- * Description Section * -->
+				<section  class="description d">
+					<h1>Mars</h1>
+					<!-- ? Overview Content ? -->
+					<div class="description__summary">
+						<p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Mars" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+					</div>
+				</section>
+			</div>
+			<!-- * Stats Section * -->
+			<div class="stats">
+				<div class="stats__item">
+					<h4 class="stats__heading">Rotation Time</h4>
+					<h2 class="stats__subheading">1.03 Days</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Revolution Time</h4>
+					<h2 class="stats__subheading">1.88 Years</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Radius</h4>
+					<h2 class="stats__subheading">3,389.5 KM</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Average Temp.</h4>
+					<h2 class="stats__subheading">-28°c</h2>
+				</div>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
 </html>
+
+<!-- Internal Structure Content Start -->
+<!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
+
+<!-- Surface Geology Content Start -->
+<!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->

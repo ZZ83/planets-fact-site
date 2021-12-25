@@ -65,7 +65,6 @@
         }
     }
 
-
     // Earth
     &__overview--earth {
             width:  175px;
@@ -80,6 +79,25 @@
         }
     }
     &__surface--earth {
+        @include mixins.mq(large) {
+            top: 68%;
+        }
+    }
+
+    // Mars
+    &__overview--mars {
+            width:  130px;
+            height: 130px;
+        @include mixins.mq(medium) {
+            width:  215px;
+            height: 215px;
+        }
+        @include mixins.mq(large) {
+            width:  335px;
+            height: 335px;  
+        }
+    }
+    &__surface--mars {
         @include mixins.mq(large) {
             top: 68%;
         }
