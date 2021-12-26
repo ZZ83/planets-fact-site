@@ -26,7 +26,7 @@
             right: 0;
             text-align: center;
             position: absolute;
-            padding-left: 2.5px;
+            padding-left: 2px;
         }
     }
 
@@ -122,6 +122,25 @@
     &__surface--jupiter {
         @include mixins.mq(large) {
             top: 64%;
+        }
+    }
+
+    // Saturn
+    &__overview--saturn {
+            width:  255px;
+            height: 255px;
+        @include mixins.mq(medium) {
+            width:  420px;
+            height: 420px;
+        }
+        @include mixins.mq(large) {
+            width:  545px;
+            height: 545px;  
+        }
+    }
+    &__surface--saturn {
+        @include mixins.mq(large) {
+            top: 60%;
         }
     }
 }

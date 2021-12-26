@@ -9,19 +9,6 @@ function openSlideMenu() {
         toggle.classList.add("primary-navigation__inner--open");
     }
 
-    // if (togglePrimary.style.position === "" || togglePrimary.style.position === "relative") {
-    //     togglePrimary.style.position = "initial";
-    // } else if (togglePrimary.style.position === "initial") {
-    //     togglePrimary.style.position = "relative";
-    // }
-
-
-
-  
-
-
-
-
     if (toggleMobile.classList.contains("mobile-nav-button__menu--open")) {
         toggleMobile.classList.remove("mobile-nav-button__menu--open");
     } else {

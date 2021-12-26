@@ -482,7 +482,7 @@ strong {
     right: 0;
     text-align: center;
     position: absolute;
-    padding-left: 2.5px;
+    padding-left: 2px;
   }
 }
 .planet__overview--mercury {
@@ -588,6 +588,27 @@ strong {
 @media (min-width: 1440px) {
   .planet__surface--jupiter {
     top: 64%;
+  }
+}
+.planet__overview--saturn {
+  width: 255px;
+  height: 255px;
+}
+@media (min-width: 768px) {
+  .planet__overview--saturn {
+    width: 420px;
+    height: 420px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__overview--saturn {
+    width: 545px;
+    height: 545px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__surface--saturn {
+    top: 60%;
   }
 }
 
