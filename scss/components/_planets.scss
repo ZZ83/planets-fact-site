@@ -8,6 +8,9 @@
     @include mixins.mq(medium) {
        height: 450px;
     }
+    @include mixins.mq(large) {
+        height: auto;
+     }
     &__overview {
         margin: auto;
     }
@@ -23,7 +26,7 @@
             right: 0;
             text-align: center;
             position: absolute;
-            padding-left: 3px;
+            padding-left: 2.5px;
         }
     }
 
@@ -100,6 +103,25 @@
     &__surface--mars {
         @include mixins.mq(large) {
             top: 68%;
+        }
+    }
+
+     // Jupiter
+     &__overview--jupiter {
+            width:  225px;
+            height: 225px;
+        @include mixins.mq(medium) {
+            width:  370px;
+            height: 370px;
+        }
+        @include mixins.mq(large) {
+            width:  540px;
+            height: 540px;  
+        }
+    }
+    &__surface--jupiter {
+        @include mixins.mq(large) {
+            top: 64%;
         }
     }
 }

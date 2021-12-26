@@ -460,6 +460,11 @@ strong {
     height: 450px;
   }
 }
+@media (min-width: 1440px) {
+  .planet {
+    height: auto;
+  }
+}
 .planet__overview {
   margin: auto;
 }
@@ -477,7 +482,7 @@ strong {
     right: 0;
     text-align: center;
     position: absolute;
-    padding-left: 3px;
+    padding-left: 2.5px;
   }
 }
 .planet__overview--mercury {
@@ -562,6 +567,27 @@ strong {
 @media (min-width: 1440px) {
   .planet__surface--mars {
     top: 68%;
+  }
+}
+.planet__overview--jupiter {
+  width: 225px;
+  height: 225px;
+}
+@media (min-width: 768px) {
+  .planet__overview--jupiter {
+    width: 370px;
+    height: 370px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__overview--jupiter {
+    width: 540px;
+    height: 540px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__surface--jupiter {
+    top: 64%;
   }
 }
 
@@ -715,6 +741,7 @@ strong {
   }
 }
 .stats__item {
+  text-transform: uppercase;
   height: 50px;
   padding: 0 1rem;
   display: flex;
