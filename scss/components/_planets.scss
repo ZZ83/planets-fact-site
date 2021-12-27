@@ -162,6 +162,25 @@
             top: 65%;
         }
     }
+
+    // Neptune
+    &__overview--neptune {
+            width:  175px;
+            height: 175px;
+        @include mixins.mq(medium) {
+            width:  285px;
+            height: 285px;
+        }
+        @include mixins.mq(large) {
+            width:  450px;
+            height: 450px;  
+        }
+    }
+    &__surface--neptune {
+        @include mixins.mq(large) {
+            top: 66%;
+        }
+    }
 }
 
 // $image-size: (
