@@ -611,6 +611,27 @@ strong {
     top: 60%;
   }
 }
+.planet__overview--uranus {
+  width: 175px;
+  height: 175px;
+}
+@media (min-width: 768px) {
+  .planet__overview--uranus {
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__overview--uranus {
+    width: 460px;
+    height: 460px;
+  }
+}
+@media (min-width: 1440px) {
+  .planet__surface--uranus {
+    top: 65%;
+  }
+}
 
 .header {
   height: 75px;

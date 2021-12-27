@@ -143,6 +143,25 @@
             top: 60%;
         }
     }
+
+    // Uranus
+    &__overview--uranus {
+            width:  175px;
+            height: 175px;
+        @include mixins.mq(medium) {
+            width:  290px;
+            height: 290px;
+        }
+        @include mixins.mq(large) {
+            width:  460px;
+            height: 460px;  
+        }
+    }
+    &__surface--uranus {
+        @include mixins.mq(large) {
+            top: 65%;
+        }
+    }
 }
 
 // $image-size: (

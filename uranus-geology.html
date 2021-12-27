@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Frontend Mentor | Planets fact site</title>
+	</head>
+	<body>
+		<!-- * Header Section * -->
+		<header class="header wrapper">
+			<div class="header__logo">
+				<strong >THE PLANETS</strong>
+			</div>
+			<button class="mobile-nav-button" aria-controls="main-nav" aria-expanded="false" onclick="openSlideMenu()">
+				<svg class="mobile-nav-button__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+					<g><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g>
+				</svg>
+			</button>
+			<nav class="primary-navigation">
+				<ul class="primary-navigation__inner">
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
+						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/venus/planet-venus.svg" alt="Venus">
+						<a   class="nav-list-item__link nav-list-item__link--venus" href="venus.html">VENUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
+						<a   class="nav-list-item__link nav-list-item__link--earth" href="earth.html">EARTH</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/mars/planet-mars.svg" alt="Mars">
+						<a   class="nav-list-item__link nav-list-item__link--mars" href="mars.html">MARS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/jupiter/planet-jupiter.svg" alt="Jupiter">
+						<a   class="nav-list-item__link nav-list-item__link--jupiter" href="jupiter.html">JUPITER</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/saturn/planet-saturn.svg" alt="Saturn">
+						<a   class="nav-list-item__link nav-list-item__link--saturn" href="saturn.html">SATURN</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/uranus/planet-uranus.svg" alt="Uranus">
+						<a   class="nav-list-item__link nav-list-item__link--uranus nav-list-item__link--uranus-active" href="uranus.html">URANUS</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+					<li class="nav-list-item">
+						<img class="nav-list-item__planet" src="/images/neptune/planet-neptune.svg" alt="Neptune">
+						<a   class="nav-list-item__link nav-list-item__link--neptune" href="neptune.html">NEPTUNE</a>
+						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="header-underline"></div>
+		<!-- * Main Section * -->
+		<main>
+			<div class="main">
+				<!-- * Secondary Navigation * -->
+				<nav class="secondary-navigation a">
+					<ul class="secondary-navigation__list">
+						<li><a class="secondary-navigation__link"        href="uranus.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link"        href="uranus-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link uranus" href="uranus-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+					</ul>
+				</nav>
+				<div class="secondary-navigation-underline b"></div>
+				<!-- * Planet Section * -->
+				<div class="planet c">
+					<img class="planet__overview planet__overview--uranus" src="/images/uranus/planet-uranus.svg"  alt="Uranus">
+                    <img class="planet__surface  planet__surface--uranus"  src="/images/uranus/geology-uranus.png" alt="Uranus's Surface Geology">
+				</div>
+				<!-- * Description Section * -->
+				<section  class="description d">
+					<h1>Uranus</h1>
+					<!-- ? Surface Geology Content ? -->
+					<div class="description__summary">
+						<p>The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Uranus#Atmosphere" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+					</div>
+				</section>
+			</div>
+			<!-- * Stats Section * -->
+			<div class="stats">
+				<div class="stats__item">
+					<h4 class="stats__heading">Rotation Time</h4>
+					<h2 class="stats__subheading">17.2 Hours</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Revolution Time</h4>
+					<h2 class="stats__subheading">84 Years</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Radius</h4>
+					<h2 class="stats__subheading">25,362 KM</h2>
+				</div>
+				<div class="stats__item">
+					<h4 class="stats__heading">Average Temp.</h4>
+					<h2 class="stats__subheading">-195°c</h2>
+				</div>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
