@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../css/main.css">
 		<title>Frontend Mentor | Planets fact site</title>
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 				<ul class="primary-navigation__inner">
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
-						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<a   class="nav-list-item__link nav-list-item__link--mercury" href="../index.html">MERCURY</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -35,7 +35,7 @@
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
-						<a   class="nav-list-item__link nav-list-item__link--earth" href="earth.html">EARTH</a>
+						<a   class="nav-list-item__link nav-list-item__link--earth nav-list-item__link--earth-active" href="earth.html">EARTH</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -50,7 +50,7 @@
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/saturn/planet-saturn.svg" alt="Saturn">
-						<a   class="nav-list-item__link nav-list-item__link--saturn nav-list-item__link--saturn-active" href="saturn.html">SATURN</a>
+						<a   class="nav-list-item__link nav-list-item__link--saturn" href="saturn.html">SATURN</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -73,23 +73,23 @@
 				<!-- * Secondary Navigation * -->
 				<nav class="secondary-navigation a">
 					<ul class="secondary-navigation__list">
-						<li><a class="secondary-navigation__link saturn" href="saturn.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
-						<li><a class="secondary-navigation__link"        href="saturn-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
-						<li><a class="secondary-navigation__link"        href="saturn-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+						<li><a class="secondary-navigation__link earth" href="earth.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link"       href="earth-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link"       href="earth-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
 					</ul>
 				</nav>
 				<div class="secondary-navigation-underline b"></div>
 				<!-- * Planet Section * -->
 				<div class="planet c">
-					<img class="planet__overview planet__overview--saturn" src="/images/saturn/planet-saturn.svg" alt="Saturn">
+					<img class="planet__overview planet__overview--earth" src="/images/earth/planet-earth.svg" alt="Earth">
 				</div>
 				<!-- * Description Section * -->
 				<section  class="description d">
-					<h1>Saturn</h1>
+					<h1>Earth</h1>
 					<!-- ? Overview Content ? -->
 					<div class="description__summary">
-						<p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.</p>
-						<a class="description__link" href="https://en.wikipedia.org/wiki/Saturn" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+						<p>Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Earth" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
 					</div>
 				</section>
 			</div>
@@ -97,22 +97,22 @@
 			<div class="stats">
 				<div class="stats__item">
 					<h4 class="stats__heading">Rotation Time</h4>
-					<h2 class="stats__subheading">10.8 Hours</h2>
+					<h2 class="stats__subheading">0.99 Days</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Revolution Time</h4>
-					<h2 class="stats__subheading">29.46 Years</h2>
+					<h2 class="stats__subheading">365.26 Days</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Radius</h4>
-					<h2 class="stats__subheading">58,232 KM</h2>
+					<h2 class="stats__subheading">6,371 KM</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Average Temp.</h4>
-					<h2 class="stats__subheading">-138°c</h2>
+					<h2 class="stats__subheading">16°c</h2>
 				</div>
 			</div>
 		</main>
-		<script src="script.js"></script>
+		<script src="../script.js"></script>
 	</body>
 </html>

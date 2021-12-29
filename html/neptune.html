@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../css/main.css">
 		<title>Frontend Mentor | Planets fact site</title>
 	</head>
 	<body>
@@ -25,12 +25,12 @@
 				<ul class="primary-navigation__inner">
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
-						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<a   class="nav-list-item__link nav-list-item__link--mercury" href="../index.html">MERCURY</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/venus/planet-venus.svg" alt="Venus">
-						<a   class="nav-list-item__link nav-list-item__link--venus nav-list-item__link--venus-active" href="venus.html">VENUS</a>
+						<a   class="nav-list-item__link nav-list-item__link--venus" href="venus.html">VENUS</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -60,7 +60,7 @@
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/neptune/planet-neptune.svg" alt="Neptune">
-						<a   class="nav-list-item__link nav-list-item__link--neptune" href="neptune.html">NEPTUNE</a>
+						<a   class="nav-list-item__link nav-list-item__link--neptune nav-list-item__link--neptune-active" href="neptune.html">NEPTUNE</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 				</ul>
@@ -73,23 +73,23 @@
 				<!-- * Secondary Navigation * -->
 				<nav class="secondary-navigation a">
 					<ul class="secondary-navigation__list">
-						<li><a class="secondary-navigation__link venus" href="venus.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
-						<li><a class="secondary-navigation__link"       href="venus-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
-						<li><a class="secondary-navigation__link"       href="venus-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+						<li><a class="secondary-navigation__link neptune" href="neptune.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link"         href="neptune-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link"         href="neptune-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
 					</ul>
 				</nav>
 				<div class="secondary-navigation-underline b"></div>
 				<!-- * Planet Section * -->
 				<div class="planet c">
-					<img class="planet__overview planet__overview--venus" src="/images/venus/planet-venus.svg" alt="Venus">
+					<img class="planet__overview planet__overview--neptune" src="/images/neptune/planet-neptune.svg" alt="Neptune">
 				</div>
 				<!-- * Description Section * -->
 				<section  class="description d">
-					<h1>Venus</h1>
+					<h1>Neptune</h1>
 					<!-- ? Overview Content ? -->
 					<div class="description__summary">
-						<p> Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.</p>
-						<a class="description__link" href="https://en.wikipedia.org/wiki/Venus" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+						<p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Neptune" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
 					</div>
 				</section>
 			</div>
@@ -97,22 +97,22 @@
 			<div class="stats">
 				<div class="stats__item">
 					<h4 class="stats__heading">Rotation Time</h4>
-					<h2 class="stats__subheading">243 Days</h2>
+					<h2 class="stats__subheading">16.08 Hours</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Revolution Time</h4>
-					<h2 class="stats__subheading">224.7 Days</h2>
+					<h2 class="stats__subheading">164.79 Years</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Radius</h4>
-					<h2 class="stats__subheading">6,051.8 KM</h2>
+					<h2 class="stats__subheading">24,622 KM</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Average Temp.</h4>
-					<h2 class="stats__subheading">471°c</h2>
+					<h2 class="stats__subheading">-201°c</h2>
 				</div>
 			</div>
 		</main>
-		<script src="script.js"></script>
+		<script src="../script.js"></script>
 	</body>
 </html>

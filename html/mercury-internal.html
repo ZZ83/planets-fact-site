@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../css/main.css">
 		<title>Frontend Mentor | Planets fact site</title>
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 				<ul class="primary-navigation__inner">
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/mercury/planet-mercury.svg" alt="Mercury">
-						<a   class="nav-list-item__link nav-list-item__link--mercury" href="index.html">MERCURY</a>
+						<a   class="nav-list-item__link nav-list-item__link--mercury nav-list-item__link--mercury-active" href="../index.html">MERCURY</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -35,7 +35,7 @@
 					</li>
 					<li class="nav-list-item">
 						<img class="nav-list-item__planet" src="/images/earth/planet-earth.svg" alt="Earth">
-						<a   class="nav-list-item__link nav-list-item__link--earth nav-list-item__link--earth-active" href="earth.html">EARTH</a>
+						<a   class="nav-list-item__link nav-list-item__link--earth" href="earth.html">EARTH</a>
 						<svg class="nav-list-item__icon" xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 					</li>
 					<li class="nav-list-item">
@@ -73,24 +73,23 @@
 				<!-- * Secondary Navigation * -->
 				<nav class="secondary-navigation a">
 					<ul class="secondary-navigation__list">
-						<li><a class="secondary-navigation__link"       href="earth.html">         <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
-						<li><a class="secondary-navigation__link"       href="earth-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
-						<li><a class="secondary-navigation__link earth" href="earth-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
+						<li><a class="secondary-navigation__link"         href="../index.html">        <span class="secondary-navigation__span-1" aria-hidden="true">01&nbsp;&nbsp;&nbsp;</span>Overview</a></li>
+						<li><a class="secondary-navigation__link mercury" href="mercury-internal.html"><span class="secondary-navigation__span-1" aria-hidden="true">02&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Internal&nbsp;</span>Structure</a></li>
+						<li><a class="secondary-navigation__link"         href="mercury-geology.html"> <span class="secondary-navigation__span-1" aria-hidden="true">03&nbsp;&nbsp;&nbsp;</span><span class="secondary-navigation__span-2">Surface&nbsp;</span>Geology</a></li>
 					</ul>
 				</nav>
 				<div class="secondary-navigation-underline b"></div>
 				<!-- * Planet Section * -->
 				<div class="planet c">
-					<img class="planet__overview planet__overview--earth" src="/images/earth/planet-earth.svg"  alt="Earth">
-                    <img class="planet__surface planet__surface--earth"   src="/images/earth/geology-earth.png" alt="Earth's Surface">
+					<img class="planet__overview planet__overview--mercury" src="/images/mercury/planet-mercury-internal.svg" alt="Mercury's Internal Structure">
 				</div>
 				<!-- * Description Section * -->
 				<section  class="description d">
-					<h1>Earth</h1>
-					<!-- ? Surface Geology Content ? -->
+					<h1>Mercury</h1>
+					<!-- ? Internal Structure Content ? -->
 					<div class="description__summary">
-						<p>The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.</p>
-						<a class="description__link" href="https://en.wikipedia.org/wiki/Earth#Surface" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
+						<p>Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
+						<a class="description__link" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank"><span>Source : </span>Wikipedia <img src="/images/icon-source.svg" alt=""></a>
 					</div>
 				</section>
 			</div>
@@ -98,22 +97,22 @@
 			<div class="stats">
 				<div class="stats__item">
 					<h4 class="stats__heading">Rotation Time</h4>
-					<h2 class="stats__subheading">0.99 Days</h2>
+					<h2 class="stats__subheading">58.6 Days</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Revolution Time</h4>
-					<h2 class="stats__subheading">365.26 Days</h2>
+					<h2 class="stats__subheading">87.97 Days</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Radius</h4>
-					<h2 class="stats__subheading">6,371 KM</h2>
+					<h2 class="stats__subheading">2,439.7 KM</h2>
 				</div>
 				<div class="stats__item">
 					<h4 class="stats__heading">Average Temp.</h4>
-					<h2 class="stats__subheading">16°c</h2>
+					<h2 class="stats__subheading">430°c</h2>
 				</div>
 			</div>
 		</main>
-		<script src="script.js"></script>
+		<script src="../script.js"></script>
 	</body>
 </html>
