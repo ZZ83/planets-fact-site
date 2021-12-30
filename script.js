@@ -12,3 +12,6 @@ function openSlideMenu() {
         toggleMobile.classList.add("mobile-nav-button__menu--open");
     }
 }
+
+document.querySelector('.mobile-nav-button').addEventListener("click", openSlideMenu);
+    
