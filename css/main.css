@@ -581,8 +581,8 @@ strong {
 }
 @media (min-width: 1440px) {
   .planet__overview--jupiter {
-    width: 540px;
-    height: 540px;
+    width: 500px;
+    height: 500px;
   }
 }
 @media (min-width: 1440px) {
@@ -602,8 +602,8 @@ strong {
 }
 @media (min-width: 1440px) {
   .planet__overview--saturn {
-    width: 545px;
-    height: 545px;
+    width: 530px;
+    height: 530px;
   }
 }
 @media (min-width: 1440px) {
@@ -651,6 +651,106 @@ strong {
 @media (min-width: 1440px) {
   .planet__surface--neptune {
     top: 66%;
+  }
+}
+
+.stats {
+  width: 90%;
+  height: 250px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .stats {
+    height: auto;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .stats {
+    width: 72%;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+.stats__item {
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #38384F;
+}
+@media (min-width: 768px) {
+  .stats__item {
+    width: 24%;
+    height: 90px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (min-width: 1440px) {
+  .stats__item {
+    height: 120px;
+  }
+}
+.stats__heading {
+  font-size: 0.523rem;
+  text-transform: uppercase;
+}
+@media (min-width: 1440px) {
+  .stats__heading {
+    font-size: 0.723rem;
+  }
+}
+.stats__subheading {
+  font-size: 1.296rem;
+}
+@media (min-width: 768px) {
+  .stats__subheading {
+    font-size: 1.575rem;
+  }
+}
+@media (min-width: 1440px) {
+  .stats__subheading {
+    font-size: 2.479rem;
+  }
+}
+
+.description {
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .description {
+    text-align: left;
+  }
+}
+.description__link {
+  font-weight: 700;
+  color: #838391;
+}
+.description__link span {
+  font-weight: 400;
+}
+.description__summary {
+  margin-bottom: 3rem;
+}
+.description__summary p {
+  margin: 1.2rem 0 3rem;
+}
+@media (min-width: 768px) {
+  .description__summary p {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .description__summary {
+    margin-top: 2rem;
   }
 }
 
@@ -747,106 +847,6 @@ strong {
 
 .d {
   grid-area: d;
-}
-
-.description {
-  margin: auto;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .description {
-    text-align: left;
-  }
-}
-.description__link {
-  font-weight: 700;
-  color: #838391;
-}
-.description__link span {
-  font-weight: 400;
-}
-.description__summary {
-  margin-bottom: 3rem;
-}
-.description__summary p {
-  margin: 1.2rem 0 3rem;
-}
-@media (min-width: 768px) {
-  .description__summary p {
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .description__summary {
-    margin-top: 2rem;
-  }
-}
-
-.stats {
-  width: 90%;
-  height: 250px;
-  margin: 0 auto 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media (min-width: 768px) {
-  .stats {
-    height: auto;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1440px) {
-  .stats {
-    width: 72%;
-    padding-top: 5rem;
-    margin-bottom: 2rem;
-  }
-}
-.stats__item {
-  text-transform: uppercase;
-  height: 50px;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid #38384F;
-}
-@media (min-width: 768px) {
-  .stats__item {
-    width: 24%;
-    height: 90px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-}
-@media (min-width: 1440px) {
-  .stats__item {
-    height: 120px;
-  }
-}
-.stats__heading {
-  font-size: 0.523rem;
-  text-transform: uppercase;
-}
-@media (min-width: 1440px) {
-  .stats__heading {
-    font-size: 0.723rem;
-  }
-}
-.stats__subheading {
-  font-size: 1.296rem;
-}
-@media (min-width: 768px) {
-  .stats__subheading {
-    font-size: 1.575rem;
-  }
-}
-@media (min-width: 1440px) {
-  .stats__subheading {
-    font-size: 2.479rem;
-  }
 }
 
 .primary-navigation__inner {

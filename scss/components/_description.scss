@@ -1,0 +1,29 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+.description {
+    margin: auto;
+    text-align: center;
+    @include mixins.mq(medium) {
+        text-align: left;
+    }
+    &__link {
+        font-weight: 700;
+        color: variables.$secondary-text-color;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__summary {
+        margin-bottom: 3rem;
+        p {
+            margin: 1.2rem 0 3rem;
+            @include mixins.mq(medium) {
+                margin-bottom: 2rem;
+            }
+        }
+        @include mixins.mq(medium) {
+            margin-top: 2rem;
+        }
+    }
+}

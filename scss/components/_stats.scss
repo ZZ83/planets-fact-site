@@ -1,0 +1,55 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+.stats {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mixins.mq(medium) {
+        height: auto;
+        flex-direction: row;
+    }
+    @include mixins.mq(large) {
+        width: 72%;
+        padding-top: 5rem;
+        margin-bottom: 2rem;
+    }
+    &__item {
+        text-transform: uppercase;
+        height: 50px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid variables.$secondary-color;
+        @include mixins.mq(medium) {
+            width: 24%;
+            height: 90px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        @include mixins.mq(large) {
+           height: 120px;
+        }
+    }
+    &__heading {
+        font-size: 0.523rem;
+        text-transform: uppercase;
+        @include mixins.mq(large) {
+            font-size: 0.723rem;
+        }
+    }
+    &__subheading {
+        font-size: 1.296rem;
+        @include mixins.mq(medium) {
+            font-size: 1.575rem;
+        }
+        @include mixins.mq(large) {
+            font-size: 2.479rem;
+        }
+    }
+}

@@ -1,5 +1,3 @@
-@use '../abstract/variables';
-
 //Flexbox
 %flex {
 	display: flex;
@@ -22,9 +20,5 @@
 
 %center-block {
 	margin: 0 auto;
-}
-
-%white {
-	color: variables.$primary-text-color;
 }
 

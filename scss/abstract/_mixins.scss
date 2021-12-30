@@ -1,15 +1,3 @@
-// BEM selectors
-@mixin ele($element) {
-    &__#{$element} {
-        @content;
-    }
-}
-@mixin mod($modifier) {
-    &--#{$modifier} {
-        @content;
-    }
-}
-
 // Media queries
 @mixin mq($break) {
     @if $break == "medium" {

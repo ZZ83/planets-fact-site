@@ -115,8 +115,8 @@
             height: 370px;
         }
         @include mixins.mq(large) {
-            width:  540px;
-            height: 540px;  
+            width:  500px;
+            height: 500px;  
         }
     }
     &__surface--jupiter {
@@ -134,8 +134,8 @@
             height: 420px;
         }
         @include mixins.mq(large) {
-            width:  545px;
-            height: 545px;  
+            width:  530px;
+            height: 530px;  
         }
     }
     &__surface--saturn {
@@ -182,14 +182,3 @@
         }
     }
 }
-
-// $image-size: (
-//     mercury: 112px 185px 290px,
-//     venus:   155px 255px 400px,
-//     earth:   175px 285px 450px,
-//     mars:    130px 215px 335px,
-//     jupiter: 225px 370px 580px,
-//     saturn:  255px 420px 665px,
-//     uranus:  175px 290px 460px,
-//     neptune: 175px 285px 450px,
-// );7

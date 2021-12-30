@@ -1,5 +1,4 @@
 @use '../abstract/mixins';
-@use '../abstract/variables';
 
 .main { 
     width: 90%;
@@ -29,14 +28,12 @@
         ;
     }
 }
-
 .a {
     grid-area: a;
 }
 .b {
     grid-area: b;
 }
-
 .c {
     grid-area: c;
 }
@@ -45,82 +42,5 @@
     grid-area: d;
 }
 
-.description {
-    margin: auto;
-    text-align: center;
-    @include mixins.mq(medium) {
-        text-align: left;
-    }
-    &__link {
-        font-weight: 700;
-        color: variables.$secondary-text-color;
-        span {
-            font-weight: 400;
-        }
-    }
-    &__summary {
-        margin-bottom: 3rem;
-        p {
-            margin: 1.2rem 0 3rem;
-            @include mixins.mq(medium) {
-                margin-bottom: 2rem;
-            }
-        }
-        @include mixins.mq(medium) {
-            margin-top: 2rem;
-        }
-    }
-}
 
-.stats {
-    width: 90%;
-    height: 250px;
-    margin: 0 auto 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include mixins.mq(medium) {
-        height: auto;
-        flex-direction: row;
-    }
-    @include mixins.mq(large) {
-        width: 72%;
-        padding-top: 5rem;
-        margin-bottom: 2rem;
-    }
-    &__item {
-        text-transform: uppercase;
-        height: 50px;
-        padding: 0 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 2px solid variables.$secondary-color;
-        @include mixins.mq(medium) {
-            width: 24%;
-            height: 90px;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-        @include mixins.mq(large) {
-           height: 120px;
-        }
-    }
-    &__heading {
-        font-size: 0.523rem;
-        text-transform: uppercase;
-        @include mixins.mq(large) {
-            font-size: 0.723rem;
-        }
-    }
-    &__subheading {
-        font-size: 1.296rem;
-        @include mixins.mq(medium) {
-            font-size: 1.575rem;
-        }
-        @include mixins.mq(large) {
-            font-size: 2.479rem;
-        }
-    }
-}
+
