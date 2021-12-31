@@ -27,6 +27,7 @@
             text-align: center;
             position: absolute;
             padding-left: 2px;
+            top: 65%;
         }
     }
 
@@ -43,11 +44,6 @@
             height: 290px;  
         }
     }
-    &__surface--mercury {
-        @include mixins.mq(large) {
-            top: 70%;
-        }
-    }
 
     // Venus
     &__overview--venus {
@@ -60,11 +56,6 @@
         @include mixins.mq(large) {
             width:  400px;
             height: 400px;  
-        }
-    }
-    &__surface--venus {
-        @include mixins.mq(large) {
-            top: 67.5%;
         }
     }
 
@@ -81,11 +72,6 @@
             height: 450px;  
         }
     }
-    &__surface--earth {
-        @include mixins.mq(large) {
-            top: 68%;
-        }
-    }
 
     // Mars
     &__overview--mars {
@@ -100,11 +86,6 @@
             height: 335px;  
         }
     }
-    &__surface--mars {
-        @include mixins.mq(large) {
-            top: 68%;
-        }
-    }
 
      // Jupiter
      &__overview--jupiter {
@@ -117,11 +98,6 @@
         @include mixins.mq(large) {
             width:  500px;
             height: 500px;  
-        }
-    }
-    &__surface--jupiter {
-        @include mixins.mq(large) {
-            top: 64%;
         }
     }
 
@@ -157,11 +133,6 @@
             height: 460px;  
         }
     }
-    &__surface--uranus {
-        @include mixins.mq(large) {
-            top: 65%;
-        }
-    }
 
     // Neptune
     &__overview--neptune {
@@ -176,9 +147,5 @@
             height: 450px;  
         }
     }
-    &__surface--neptune {
-        @include mixins.mq(large) {
-            top: 66%;
-        }
-    }
+
 }

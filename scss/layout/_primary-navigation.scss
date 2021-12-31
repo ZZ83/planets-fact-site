@@ -63,7 +63,7 @@
         line-height: 76px;
         @include mixins.mq(medium) {
             font-size: 0.772rem;
-            color: variables.$secondary-text-color;
+            color: #c1c1c8;
         }
         @include mixins.mq(large) {
             border-top: 4px solid transparent;
