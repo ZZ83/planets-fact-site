@@ -26,7 +26,7 @@
             background-color: transparent;
         }
         @include mixins.mq(large) {
-            width: 60%;
+            width: 62%;
             margin-left: auto;
         }
     }
@@ -63,7 +63,7 @@
         letter-spacing: 2.5px;
         line-height: 76px;
         @include mixins.mq(medium) {
-            font-size: 0.772rem;
+            font-size: 0.678rem;
             color: #c1c1c8;
         }
         @include mixins.mq(large) {
