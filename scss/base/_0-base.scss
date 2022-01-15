@@ -7,14 +7,23 @@
     box-sizing: border-box;
 }
 
-body {
-    color: variables.$primary-text-color;
+html {
     background-color: variables.$primary-color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-image: url(../images/background-stars.svg);
+}
+
+body {
+    color: variables.$primary-text-color;
+    // background-color: variables.$primary-color;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+    // background-image: url(../images/background-stars.svg);
 }
 
 a {
