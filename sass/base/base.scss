@@ -1,0 +1,102 @@
+@use '../abstracts' as *;
+
+*, 
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $primary-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url(../images/background-stars.svg);
+    // padding-bottom: 3rem;
+}
+
+body {
+    color: $primary-text-color;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin:  0;
+    padding: 0;
+}
+
+h1,
+h2,
+strong {
+    font-weight: 500;
+    font-family: 'Antonio', sans-serif;
+}
+
+h1 {
+    font-size: rem(40px);
+    line-height: rem(52px);
+    @include mq(medium) {
+        font-size: rem(48px);
+        line-height: rem(62px);
+    }
+    @include mq(large) {
+        font-size: rem(80px);
+        line-height: rem(104px);
+    } 
+}
+
+h2 {
+    font-size: 1.296rem;
+    @include mq(medium) {
+        font-size: 1.575rem; 
+    }
+    @include mq(large) {
+        font-size: 2.479rem;
+    } 
+}
+
+h4 {
+    color: $secondary-text-color;
+}
+
+h4 {
+    line-height:   25px;
+    letter-spacing: 1px;
+    font-size: 0.523rem;
+    @include mq(medium) {
+        font-size: 0.723rem;
+    } 
+}
+
+P { 
+    font-weight: 400;
+    font-size: 0.878rem;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+ul {
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none
+}
+
+strong {
+    font-size: 1.793rem;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}

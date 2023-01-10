@@ -1,4 +1,4 @@
-/********************** Variables **********************/
+/********************** Color Variables **********************/
 $primary-color:        #070724;
 $secondary-color:      #38384F;
 $primary-text-color:   #ffffff;
@@ -15,6 +15,11 @@ $colors: (
     uranus: #1ec2a4,
     neptune:#2d68f0,
 );
+
+/********************** Convert Pixes to Rems Function **********************/
+@function rem($size) {
+    @return calc($size / 16px * 1rem);
+}
 
 /********************** Media Querie Mixins **********************/
 @mixin mq($break) {
