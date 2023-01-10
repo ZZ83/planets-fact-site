@@ -1,39 +1,27 @@
 @use '../abstracts' as *;
 
 .header {
-    height: 75px;
+    height: rem(68px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     @include mq(medium) {
-        height: auto;
+        height: rem(159px);
         border: none;
         flex-direction: column;
     }
-    @include mq(large) {
-        flex-direction: row;
-    }
-
-    &__logo {
-        @include mq(medium) {
-            margin: 3rem 0 1rem 0;
-            text-align: center;
-        }
-        @include mq(large) {
-            width: 20%;
-            margin: 0;
-            text-align: left;
-            padding-top: 4px;
-        }
-    }
+    // @include mq(large) {
+    //     flex-direction: row;
+    // }
 }
 
 .mobile-nav-button {
-    border: 0;
-    width:  2rem;
-    height: 2rem;
+    width:  rem(24px);
+    height: rem(17px);
     margin-left: auto;
-    margin-top: 0.4rem;
+    margin-top: rem(4px);
+    padding: 0;
+    border: 0;
     background-color: transparent;
     cursor: pointer;
     @include mq(medium) {

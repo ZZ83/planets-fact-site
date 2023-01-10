@@ -13,7 +13,6 @@ html {
     background-position: center center;
     background-attachment: fixed;
     background-image: url(../images/background-stars.svg);
-    // padding-bottom: 3rem;
 }
 
 body {
@@ -113,11 +112,7 @@ li {
     list-style-type: none
 }
 
-strong {
-    font-size: 1.793rem;
-}
-
 .wrapper {
-    width: 90%;
+    width: calc(100% - rem(48px));
     margin: auto;
 }

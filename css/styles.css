@@ -440,13 +440,15 @@ li {
   list-style-type: none;
 }
 
-strong {
-  font-size: 1.793rem;
+.wrapper {
+  width: calc(100% - 3rem);
+  margin: auto;
 }
 
-.wrapper {
-  width: 90%;
-  margin: auto;
+.logo {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.065625rem;
 }
 
 .planet {
@@ -720,44 +722,25 @@ strong {
 }
 
 .header {
-  height: 75px;
+  height: 4.25rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .header {
-    height: auto;
+    height: 9.9375rem;
     border: none;
     flex-direction: column;
   }
 }
-@media (min-width: 1440px) {
-  .header {
-    flex-direction: row;
-  }
-}
-@media (min-width: 768px) {
-  .header__logo {
-    margin: 3rem 0 1rem 0;
-    text-align: center;
-  }
-}
-@media (min-width: 1440px) {
-  .header__logo {
-    width: 20%;
-    margin: 0;
-    text-align: left;
-    padding-top: 4px;
-  }
-}
 
 .mobile-nav-button {
-  border: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.0625rem;
   margin-left: auto;
-  margin-top: 0.4rem;
+  margin-top: 0.25rem;
+  padding: 0;
+  border: 0;
   background-color: transparent;
   cursor: pointer;
 }
