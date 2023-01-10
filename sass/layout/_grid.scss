@@ -1,4 +1,4 @@
-@use '../abstract/mixins';
+@use '../abstracts' as *;
 
 .main { 
     width: 90%;
@@ -12,14 +12,14 @@
         "c c c c c c c c c c c c"
         "d d d d d d d d d d d d"
     ;
-    @include mixins.mq(medium) {
+    @include mq(medium) {
         grid-template-areas:
             "c c c c c c c c c c c c"
             "b b b b b b b b b b b b"
             "d d d d d d . a a a a a"
         ;
     }
-    @include mixins.mq(large) {
+    @include mq(large) {
         width: 72%;
         margin-top: 7rem;
         grid-template-areas:

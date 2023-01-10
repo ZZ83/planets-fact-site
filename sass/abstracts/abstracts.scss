@@ -1,0 +1,67 @@
+/********************** Variables **********************/
+$primary-color:        #070724;
+$secondary-color:      #38384F;
+$primary-text-color:   #ffffff;
+$secondary-text-color: #838391;
+
+/********************** Active and Hover State Colors **********************/
+$colors: (
+    mercury:#419EBB,
+    venus:  #EDA249,
+    earth:  #6f2ed6,
+    mars:   #D14C32,
+    jupiter:#D83A34,
+    saturn: #CD5120,
+    uranus: #1ec2a4,
+    neptune:#2d68f0,
+);
+
+/********************** Media Querie Mixins **********************/
+@mixin mq($break) {
+    @if $break == "medium" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    }
+}
+
+/********************** PLACHOLDERS **********************/
+    // Flexbox 
+    %flex {
+        display: flex;
+    }
+
+    %flex-ai-c {
+        align-items: center;
+    }
+
+    %flex-jc-sb {
+        justify-content: space-between;
+    }
+
+    %flex-jc-sa {
+        justify-content: space-around;
+    }
+
+    %flex-jc-c {
+        justify-content: center;
+    }
+
+    %flex-d-r {
+        flex-direction: row;
+    }
+
+    %flex-d-c {
+        flex-direction: column;
+    }
+
+    %flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

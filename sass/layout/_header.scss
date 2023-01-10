@@ -1,26 +1,25 @@
-@use '../abstract/mixins';
-@use '../abstract/variables';
+@use '../abstracts' as *;
 
 .header {
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include mixins.mq(medium) {
+    @include mq(medium) {
         height: auto;
         border: none;
         flex-direction: column;
     }
-    @include mixins.mq(large) {
+    @include mq(large) {
         flex-direction: row;
     }
 
     &__logo {
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             margin: 3rem 0 1rem 0;
             text-align: center;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width: 20%;
             margin: 0;
             text-align: left;
@@ -37,19 +36,19 @@
     margin-top: 0.4rem;
     background-color: transparent;
     cursor: pointer;
-    @include mixins.mq(medium) {
+    @include mq(medium) {
         display: none; 
     }
     &__menu {
-        fill: variables.$primary-text-color;
+        fill: $primary-text-color;
     }
     &__menu--open {
-        fill: variables.$secondary-text-color;
+        fill: $secondary-text-color;
     }
 }
 
 .header-underline {
-    border-bottom: 1px solid variables.$secondary-text-color;
+    border-bottom: 1px solid $secondary-text-color;
 }
 
 

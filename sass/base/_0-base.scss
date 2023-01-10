@@ -1,5 +1,4 @@
-@use '../abstract/mixins';
-@use '../abstract/variables';
+@use '../abstracts' as *;
 
 *, 
 *:after,
@@ -8,7 +7,7 @@
 }
 
 html {
-    background-color: variables.$primary-color;
+    background-color: $primary-color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -18,12 +17,12 @@ html {
 }
 
 body {
-    color: variables.$primary-text-color;
+    color: $primary-text-color;
 }
 
 a {
     text-decoration: none;
-    color: variables.$primary-text-color;
+    color: $primary-text-color;
 }
 
 ul {
@@ -36,7 +35,7 @@ li {
 }
 
 h4 {
-    color: variables.$secondary-text-color;
+    color: $secondary-text-color;
 }
 
 h1,

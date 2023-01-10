@@ -1,14 +1,14 @@
-@use '../abstract/mixins';
+@use '../abstracts' as *;
 
 .planet {
     position: relative;
     height: 300px;
     display: flex;
     flex-direction: column;
-    @include mixins.mq(medium) {
+    @include mq(medium) {
        height: 450px;
     }
-    @include mixins.mq(large) {
+    @include mq(large) {
         height: auto;
      }
     &__overview {
@@ -16,7 +16,7 @@
     }
     &__surface {
         display: none;
-        @include mixins.mq(large) {
+        @include mq(large) {
             width: 163px;
             height: 199px;
             display: initial;
@@ -35,11 +35,11 @@
     &__overview--mercury {
             width:  115px;
             height: 115px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  185px;
             height: 185px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  290px;
             height: 290px;  
         }
@@ -49,11 +49,11 @@
     &__overview--venus {
             width:  155px;
             height: 155px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  255px;
             height: 255px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  400px;
             height: 400px;  
         }
@@ -63,11 +63,11 @@
     &__overview--earth {
             width:  175px;
             height: 175px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  285px;
             height: 285px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  450px;
             height: 450px;  
         }
@@ -77,11 +77,11 @@
     &__overview--mars {
             width:  130px;
             height: 130px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  215px;
             height: 215px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  335px;
             height: 335px;  
         }
@@ -91,11 +91,11 @@
      &__overview--jupiter {
             width:  225px;
             height: 225px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  370px;
             height: 370px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  500px;
             height: 500px;  
         }
@@ -105,17 +105,17 @@
     &__overview--saturn {
             width:  255px;
             height: 255px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  420px;
             height: 420px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  530px;
             height: 530px;  
         }
     }
     &__surface--saturn {
-        @include mixins.mq(large) {
+        @include mq(large) {
             top: 60%;
         }
     }
@@ -124,11 +124,11 @@
     &__overview--uranus {
             width:  175px;
             height: 175px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  290px;
             height: 290px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  460px;
             height: 460px;  
         }
@@ -138,11 +138,11 @@
     &__overview--neptune {
             width:  175px;
             height: 175px;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             width:  285px;
             height: 285px;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             width:  450px;
             height: 450px;  
         }

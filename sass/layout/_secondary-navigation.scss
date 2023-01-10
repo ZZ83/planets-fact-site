@@ -1,5 +1,4 @@
-@use '../abstract/mixins';
-@use '../abstract/variables';
+@use '../abstracts' as *;
 
 .secondary-navigation {
     padding: 0 5%;
@@ -7,7 +6,7 @@
         height: 100%;
         display: flex;
         justify-content: space-between; 
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             flex-direction: column;  
         }
     }
@@ -21,37 +20,37 @@
         line-height: 42px;
         border-top:    6px solid transparent;
         border-bottom: 6px solid transparent;
-        color: variables.$secondary-text-color;
-        @include mixins.mq(medium) {
+        color: $secondary-text-color;
+        @include mq(medium) {
             height: 52px;
             padding-left: 1rem;
-            border: 2px solid variables.$secondary-color;
-            color: variables.$primary-text-color;
+            border: 2px solid $secondary-color;
+            color: $primary-text-color;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             font-size: 0.723rem;
             &:hover {
                 border-color: transparent;
-                background-color: variables.$secondary-color;
+                background-color: $secondary-color;
             }
         }
     }
     &__span-1 {
-        color: variables.$secondary-text-color;
+        color: $secondary-text-color;
     }
     &__span-1,
     &__span-2 {
         display: none;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             display: initial;
         }
     }
-    @include mixins.mq(medium) {
+    @include mq(medium) {
         height: 195px;
         margin-top: 50px;
         padding: 0;
     }
-    @include mixins.mq(large) {
+    @include mq(large) {
         margin: 0;
     }
 }
@@ -61,23 +60,23 @@
     right: 0;
     top: 129px;
     position: absolute;
-    border-bottom: 1px solid variables.$secondary-text-color;
-    @include mixins.mq(medium) {
+    border-bottom: 1px solid $secondary-text-color;
+    @include mq(medium) {
         display: none;
     }
 }
 
-@each $name, $value in variables.$colors {
+@each $name, $value in $colors {
     .#{$name} {
-        color: variables.$primary-text-color;
+        color: $primary-text-color;
         border-bottom: 6px solid $value;
-        @include mixins.mq(medium) {
+        @include mq(medium) {
             background-color: $value;
             border-color: transparent;
             border-top:    6px solid transparent;
             border-bottom: 6px solid transparent;
         }
-        @include mixins.mq(large) {
+        @include mq(large) {
             &:hover {
                 background-color: $value;
             }
