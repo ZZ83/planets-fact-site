@@ -309,6 +309,7 @@ template {
 
 /********************** Color Variables **********************/
 /********************** Active and Hover State Colors **********************/
+/********************** Active and Hover State Colors **********************/
 /********************** Convert Pixes to Rems Function **********************/
 /********************** Media Querie Mixins **********************/
 /********************** PLACHOLDERS **********************/
@@ -441,14 +442,20 @@ li {
 }
 
 .wrapper {
-  width: calc(100% - 3rem);
   margin: auto;
+  width: calc(100% - 3rem);
 }
 
 .logo {
   font-size: 1.75rem;
   line-height: 2.25rem;
   letter-spacing: -0.065625rem;
+}
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 2rem;
+    margin-bottom: 2.4375rem;
+  }
 }
 
 .planet {
@@ -725,12 +732,15 @@ li {
   height: 4.25rem;
   display: flex;
   align-items: center;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .header {
     height: 9.9375rem;
     border: none;
     flex-direction: column;
+    width: calc(100% - 6.5rem);
   }
 }
 
@@ -797,63 +807,69 @@ li {
   grid-area: d;
 }
 
-.primary-navigation__inner {
-  z-index: 1;
-  top: 76px;
-  left: -100%;
+.primary-navigation {
   width: 100%;
-  height: auto;
+  padding-top: 2.75rem;
   position: absolute;
-  padding: 0 2.5%;
-  transition: all 0.5s;
+  top: 4.3125rem;
+  left: -100%;
+  bottom: 0;
+  z-index: 1;
   background-color: #070724;
-}
-@media (min-width: 768px) {
-  .primary-navigation__inner {
-    transition: all 0s;
-    width: 100%;
-    padding: 0;
-    top: 0;
-    right: initial;
-    height: auto;
-    position: initial;
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-}
-@media (min-width: 1440px) {
-  .primary-navigation__inner {
-    width: 62%;
-    margin-left: auto;
-  }
-}
-.primary-navigation__inner--open {
-  left: 0;
+  transition: left 0.5s;
 }
 @media (min-width: 768px) {
   .primary-navigation {
+    transition: all 0s;
+    padding: 0;
+    position: initial;
+    top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .primary-navigation {
+    margin-left: auto;
+  }
+}
+@media (min-width: 768px) {
+  .primary-navigation__inner {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
 }
+.primary-navigation--open {
+  left: 0;
+}
 
 .nav-list-item {
-  height: 80px;
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 15px;
-  line-height: 15px;
+  padding: 1.25rem 0;
+  width: calc(100% - 3rem);
   border-bottom: 1px solid #838391;
+  margin: auto;
+}
+.nav-list-item:first-child {
+  padding-top: 0;
 }
 .nav-list-item:last-child {
+  padding-bottom: 0;
   border-bottom: none;
+}
+@media (min-width: 768px) {
+  .nav-list-item {
+    margin: 0;
+    padding: 0;
+    width: initial;
+    border: none;
+  }
 }
 .nav-list-item__planet {
   width: 20px;
   height: 20px;
-  margin-right: 2rem;
+  border-radius: 50%;
+  margin-right: 1.25rem;
 }
 @media (min-width: 768px) {
   .nav-list-item__planet {
@@ -861,14 +877,18 @@ li {
   }
 }
 .nav-list-item__link {
-  font-size: 0.937rem;
-  letter-spacing: 2.5px;
-  line-height: 76px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.085rem;
+  margin-top: 0.21875rem;
 }
 @media (min-width: 768px) {
   .nav-list-item__link {
-    font-size: 0.678rem;
+    margin-top: 0;
     color: #c1c1c8;
+    font-size: 0.6875rem;
+    letter-spacing: 0.0625rem;
   }
 }
 @media (min-width: 1440px) {
@@ -880,6 +900,39 @@ li {
   .nav-list-item__link:hover {
     color: #ffffff;
   }
+}
+.nav-list-item__icon {
+  margin-left: auto;
+  margin-right: 0.4375rem;
+}
+@media (min-width: 768px) {
+  .nav-list-item__icon {
+    display: none;
+  }
+}
+.nav-list-item__planet--mercury {
+  background-color: #DEF4FC;
+}
+.nav-list-item__planet--venus {
+  background-color: #F7CC7F;
+}
+.nav-list-item__planet--earth {
+  background-color: #545BFE;
+}
+.nav-list-item__planet--mars {
+  background-color: #FF6A45;
+}
+.nav-list-item__planet--jupiter {
+  background-color: #ECAD7A;
+}
+.nav-list-item__planet--saturn {
+  background-color: #FCCB6B;
+}
+.nav-list-item__planet--uranus {
+  background-color: #65F0D5;
+}
+.nav-list-item__planet--neptune {
+  background-color: #497EFA;
 }
 @media (min-width: 1440px) {
   .nav-list-item__link--mercury:hover {
@@ -967,20 +1020,6 @@ li {
   .nav-list-item__link--neptune-active {
     color: #ffffff;
     border-top: 4px solid #2d68f0;
-  }
-}
-.nav-list-item__icon {
-  margin-left: auto;
-  margin-right: 0.7rem;
-}
-@media (min-width: 768px) {
-  .nav-list-item__icon {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .nav-list-item {
-    border: none;
   }
 }
 

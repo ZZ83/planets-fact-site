@@ -1,11 +1,11 @@
 function openSlideMenu() {
-    const toggle           = document.querySelector('.primary-navigation__inner');
+    const toggle           = document.querySelector('.primary-navigation');
     const toggleMobile     = document.querySelector('.mobile-nav-button__menu');
     const mobileNavButton  = document.querySelector('.mobile-nav-button');
-    if (toggle.classList.contains("primary-navigation__inner--open")) {
-        toggle.classList.remove("primary-navigation__inner--open");
+    if (toggle.classList.contains("primary-navigation--open")) {
+        toggle.classList.remove("primary-navigation--open");
     } else {
-        toggle.classList.add("primary-navigation__inner--open");
+        toggle.classList.add("primary-navigation--open");
     }
     if(mobileNavButton.getAttribute("aria-expanded") === "false") {
         mobileNavButton.setAttribute("aria-expanded", true);

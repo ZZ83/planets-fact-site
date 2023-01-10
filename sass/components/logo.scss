@@ -4,4 +4,8 @@
     font-size: rem(28px);
     line-height: rem(36px);
     letter-spacing: rem(-1.05px);
+    @include mq(medium) {
+        margin-top: rem(32px);
+        margin-bottom: rem(39px);
+    }
 }

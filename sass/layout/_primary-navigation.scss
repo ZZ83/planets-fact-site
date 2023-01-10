@@ -1,68 +1,76 @@
 @use '../abstracts' as *;
 
 .primary-navigation {
+    width: 100%;
+    padding-top: rem(44px);
+    position: absolute;
+    top: rem(69px);
+    left: -100%;
+    bottom: 0;
+    z-index: 1;
+    background-color: $primary-color;
+    transition: left 0.5s;
+    @include mq(medium) {
+        transition: all 0s;
+        padding: 0;
+        position: initial;
+        top: 0;
+    }
+    @include mq(large) {
+        // width: 62%;
+        margin-left: auto;
+    }
     &__inner {
-        z-index: 1;
-        top: 76px;
-        left: -100%;
-        width:  100%;
-        height: auto;
-        position: absolute; 
-        padding: 0 2.5%;
-        transition: all 0.5s;
-        background-color: $primary-color;
         @include mq(medium) {
-            transition: all 0s;
-            width: 100%;
-            padding: 0;
-            top: 0;
-            right: initial;
-            height: auto;
-            position: initial;
             display: flex;
             justify-content: space-between;
-            background-color: transparent;
-        }
-        @include mq(large) {
-            width: 62%;
-            margin-left: auto;
+            width: 100%;
         }
     }
-    &__inner--open {
+    &--open {
         left: 0;
-    }
-    @include mq(medium) {
-        width: 100%;
     }
 }
 
 .nav-list-item {
-    height: 80px;
     display: flex;
     align-items: center;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size:   15px;
-    line-height: 15px;
+    padding: rem(20px) 0;
+    width: calc(100% - rem(48px));
     border-bottom: 1px solid $secondary-text-color;
+    margin: auto;
+    &:first-child {
+        padding-top: 0;
+    }
     &:last-child {
+        padding-bottom: 0;
         border-bottom: none;
+    }
+    @include mq(medium) {
+        margin: 0;
+        padding: 0;
+        width: initial;
+        border: none;
     }
     &__planet {
         width:  20px;
         height: 20px;
-        margin-right: 2rem;
+        border-radius: 50%; margin-right: rem(20px);
         @include mq(medium) {
             display: none;
         }
     }
     &__link {
-        font-size: 0.937rem;
-        letter-spacing: 2.5px;
-        line-height: 76px;
+        font-weight: 700;
+        font-size: rem(15px);
+        line-height: rem(25px);
+        letter-spacing: rem(1.36px);
+        margin-top: rem(3.5px);
         @include mq(medium) {
-            font-size: 0.678rem;
+            margin-top: 0;
             color: #c1c1c8;
+            font-size: rem(11px);
+            letter-spacing: rem(1px);
         }
         @include mq(large) {
             border-top: 4px solid transparent;
@@ -71,6 +79,18 @@
             @include mq(large) {
                 color: $primary-text-color;
             }
+        }
+    }
+    &__icon {
+        margin-left: auto;
+        margin-right: rem(7px);
+        @include mq(medium) {
+            display: none;
+        }
+    }
+    @each $name, $value in $mobile-colors {
+        &__planet--#{$name} {
+            background-color: $value;
         }
     }
     @each $name, $value in $colors {
@@ -89,16 +109,6 @@
                 border-top: 4px solid $value; 
             } 
         }
-    }
-    &__icon {
-        margin-left: auto;
-        margin-right: 0.7rem;
-        @include mq(medium) {
-            display: none;
-        }
-    }
-    @include mq(medium) {
-        border: none;
     }
 }
 

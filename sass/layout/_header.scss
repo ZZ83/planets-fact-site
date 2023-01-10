@@ -5,10 +5,13 @@
     display: flex;
     align-items: center;
     // justify-content: space-between;
+    width: calc(100% - rem(48px));
+    margin: 0 auto;
     @include mq(medium) {
         height: rem(159px);
         border: none;
         flex-direction: column;
+        width: calc(100% - rem(104px));
     }
     // @include mq(large) {
     //     flex-direction: row;
