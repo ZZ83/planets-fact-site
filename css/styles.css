@@ -416,9 +416,14 @@ h4 {
 }
 
 P {
-  font-weight: 400;
-  font-size: 0.878rem;
-  line-height: 25px;
+  font-size: 0.6875rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 1440px) {
+  P {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+  }
 }
 
 a {

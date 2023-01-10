@@ -91,9 +91,12 @@ h4 {
 }
 
 P { 
-    font-weight: 400;
-    font-size: 0.878rem;
-    line-height: 25px;
+    font-size: rem(11px);
+    line-height: rem(22px);
+    @include mq(large) {
+        font-size: rem(14px);
+        line-height: rem(25px);
+    } 
 }
 
 a {
