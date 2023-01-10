@@ -384,6 +384,23 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 0.5625rem;
+  line-height: 0.625rem;
+  letter-spacing: 0.120625rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    line-height: 1.5625rem;
+  }
+}
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 0.75rem;
+    letter-spacing: 0.160625rem;
+  }
+}
+
 h4 {
   color: #838391;
 }
