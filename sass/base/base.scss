@@ -80,14 +80,13 @@ h3 {
 
 h4 {
     color: $secondary-text-color;
-}
-
-h4 {
-    line-height:   25px;
-    letter-spacing: 1px;
-    font-size: 0.523rem;
-    @include mq(medium) {
-        font-size: 0.723rem;
+    font-size: rem(8px);
+    line-height: rem(16px);
+    letter-spacing: rem(0.73px);
+    @include mq(large) {
+        font-size: rem(11px);
+        line-height: rem(25px);
+        letter-spacing: rem(1px);
     } 
 }
 

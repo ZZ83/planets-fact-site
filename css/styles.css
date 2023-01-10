@@ -403,16 +403,15 @@ h3 {
 
 h4 {
   color: #838391;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.045625rem;
 }
-
-h4 {
-  line-height: 25px;
-  letter-spacing: 1px;
-  font-size: 0.523rem;
-}
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   h4 {
-    font-size: 0.723rem;
+    font-size: 0.6875rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.0625rem;
   }
 }
 
