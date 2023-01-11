@@ -622,19 +622,21 @@ li {
   }
 }
 .planet__overview--uranus {
-  width: 175px;
-  height: 175px;
+  width: 11rem;
+  height: 11rem;
 }
 @media (min-width: 768px) {
   .planet__overview--uranus {
-    width: 290px;
-    height: 290px;
+    width: 18.125rem;
+    height: 18.125rem;
   }
 }
 @media (min-width: 1440px) {
   .planet__overview--uranus {
-    width: 460px;
-    height: 460px;
+    width: 28.625rem;
+    height: 28.625rem;
+    top: 15.25rem;
+    left: 15.6875rem;
   }
 }
 .planet__overview--neptune {

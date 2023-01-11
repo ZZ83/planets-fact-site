@@ -127,15 +127,17 @@
 
     // Uranus
     &__overview--uranus {
-            width:  175px;
-            height: 175px;
+            width:  rem(176px);
+            height: rem(176px);
         @include mq(medium) {
-            width:  290px;
-            height: 290px;
+            width:  rem(290px);
+            height: rem(290px);
         }
         @include mq(large) {
-            width:  460px;
-            height: 460px;  
+            width:  rem(458px);
+            height: rem(458px);  
+            top:  rem(244px);
+            left: rem(251px);
         }
     }
 
