@@ -15,8 +15,8 @@
     }
     @include mq(large) {
         max-width: rem(1110px);
-        padding-top: 5rem;
         gap: rem(30px);
+        margin-top: rem(87px);
     }
     &__item {
         text-transform: uppercase;

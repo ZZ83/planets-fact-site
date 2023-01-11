@@ -6,6 +6,9 @@
     @include mq(medium) {
         text-align: left;
     }
+    @include mq(large) {
+        margin-bottom: rem(38px)
+    }
     &__link {
         font-weight: 700;
         font-size: rem(12px);

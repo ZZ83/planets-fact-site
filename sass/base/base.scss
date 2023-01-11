@@ -18,7 +18,16 @@ html {
 body {
     color: $primary-text-color;
     font-family: 'Spartan', sans-serif;
-    padding-bottom: 100px;
+    margin: 0 auto;
+    padding-bottom: rem(47px);
+    position: relative;
+    max-width: rem(1440px);
+    @include mq(medium) {
+        padding-bottom: rem(36px);
+    }
+    @include mq(large) {
+        padding-bottom: rem(56px);
+    } 
 }
 
 h1,
@@ -30,8 +39,7 @@ h4 {
 }
 
 h1,
-h2,
-strong {
+h2 {
     font-weight: 500;
     font-family: 'Antonio', sans-serif;
 }

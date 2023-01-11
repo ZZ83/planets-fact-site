@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
 
 .planet {
-    position: relative;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -10,9 +9,14 @@
     }
     @include mq(large) {
         height: auto;
-     }
+        
+    }
     &__overview {
         margin: auto;
+        @include mq(large) {
+            position: absolute;
+            
+        }
     }
     &__surface {
         display: none;
@@ -42,6 +46,9 @@
         @include mq(large) {
             width:  rem(290px);
             height: rem(290px);  
+            
+            left: 335px;
+            top: 328px;
         }
     }
 
@@ -103,15 +110,17 @@
 
     // Saturn
     &__overview--saturn {
-            width:  255px;
-            height: 255px;
+            width:  rem(256px);
+            height: rem(256px);
         @include mq(medium) {
-            width:  420px;
-            height: 420px;
+            width:  rem(422px);
+            height: rem(422px);
         }
         @include mq(large) {
-            width:  530px;
-            height: 530px;  
+            width:  rem(667px);
+            height: rem(667px);  
+            left: 146.95px;
+            top: 155.95px;
         }
     }
     &__surface--saturn {

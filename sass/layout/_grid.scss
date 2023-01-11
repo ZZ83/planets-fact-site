@@ -22,9 +22,10 @@
     }
     @include mq(large) {
         width: 100%;
+        height: rem(541px);
         column-gap: rem(30px);
         max-width: rem(1110px);
-        margin-top: 7rem;
+        margin-top: rem(126px);
         grid-template-areas:
             "c c c c c c c . d d d d"
             "c c c c c c c . a a a a"

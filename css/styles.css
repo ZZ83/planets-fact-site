@@ -331,7 +331,20 @@ html {
 body {
   color: #ffffff;
   font-family: "Spartan", sans-serif;
-  padding-bottom: 100px;
+  margin: 0 auto;
+  padding-bottom: 2.9375rem;
+  position: relative;
+  max-width: 90rem;
+}
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 2.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding-bottom: 3.5rem;
+  }
 }
 
 h1,
@@ -343,8 +356,7 @@ h4 {
 }
 
 h1,
-h2,
-strong {
+h2 {
   font-weight: 500;
   font-family: "Antonio", sans-serif;
 }
@@ -431,6 +443,8 @@ li {
 }
 
 .logo {
+  font-weight: 500;
+  font-family: "Antonio", sans-serif;
   font-size: 1.75rem;
   line-height: 2.25rem;
   letter-spacing: -0.065625rem;
@@ -465,7 +479,6 @@ li {
 }
 
 .planet {
-  position: relative;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -482,6 +495,11 @@ li {
 }
 .planet__overview {
   margin: auto;
+}
+@media (min-width: 1440px) {
+  .planet__overview {
+    position: absolute;
+  }
 }
 .planet__surface {
   display: none;
@@ -515,6 +533,8 @@ li {
   .planet__overview--mercury {
     width: 18.125rem;
     height: 18.125rem;
+    left: 335px;
+    top: 328px;
   }
 }
 .planet__overview--venus {
@@ -582,19 +602,21 @@ li {
   }
 }
 .planet__overview--saturn {
-  width: 255px;
-  height: 255px;
+  width: 16rem;
+  height: 16rem;
 }
 @media (min-width: 768px) {
   .planet__overview--saturn {
-    width: 420px;
-    height: 420px;
+    width: 26.375rem;
+    height: 26.375rem;
   }
 }
 @media (min-width: 1440px) {
   .planet__overview--saturn {
-    width: 530px;
-    height: 530px;
+    width: 41.6875rem;
+    height: 41.6875rem;
+    left: 146.95px;
+    top: 155.95px;
   }
 }
 @media (min-width: 1440px) {
@@ -654,8 +676,8 @@ li {
 @media (min-width: 1440px) {
   .stats {
     max-width: 69.375rem;
-    padding-top: 5rem;
     gap: 1.875rem;
+    margin-top: 5.4375rem;
   }
 }
 .stats__item {
@@ -703,6 +725,11 @@ li {
 @media (min-width: 768px) {
   .description {
     text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .description {
+    margin-bottom: 2.375rem;
   }
 }
 .description__link {
@@ -777,9 +804,10 @@ li {
 @media (min-width: 1440px) {
   .main {
     width: 100%;
+    height: 33.8125rem;
     column-gap: 1.875rem;
     max-width: 69.375rem;
-    margin-top: 7rem;
+    margin-top: 7.875rem;
     grid-template-areas: "c c c c c c c . d d d d" "c c c c c c c . a a a a";
   }
 }
