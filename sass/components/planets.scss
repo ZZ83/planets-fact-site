@@ -40,7 +40,7 @@
         @include mq(large) {
             width:  rem(290px);
             height: rem(290px);  
-            top: rem(328px);
+            top:  rem(328px);
             left: rem(335px);
         }
     }
@@ -56,22 +56,24 @@
         @include mq(large) {
             width:  rem(400px);
             height: rem(400px);
-            top: rem(273px);
+            top:  rem(273px);
             left: rem(280px);
         }
     }
 
     // Earth
     &__overview--earth {
-            width:  175px;
-            height: 175px;
+            width:  rem(173px);
+            height: rem(173px);
         @include mq(medium) {
-            width:  285px;
-            height: 285px;
+            width:  rem(285px);
+            height: rem(285px);
         }
         @include mq(large) {
-            width:  450px;
-            height: 450px;  
+            width:  rem(450px);
+            height: rem(450px);  
+            top:  rem(248px);
+            left: rem(255px);
         }
     }
 
