@@ -640,19 +640,21 @@ li {
   }
 }
 .planet__overview--neptune {
-  width: 175px;
-  height: 175px;
+  width: 10.8125rem;
+  height: 10.8125rem;
 }
 @media (min-width: 768px) {
   .planet__overview--neptune {
-    width: 285px;
-    height: 285px;
+    width: 17.8125rem;
+    height: 17.8125rem;
   }
 }
 @media (min-width: 1440px) {
   .planet__overview--neptune {
-    width: 450px;
-    height: 450px;
+    width: 28.125rem;
+    height: 28.125rem;
+    top: 15.5rem;
+    left: 15.9375rem;
   }
 }
 

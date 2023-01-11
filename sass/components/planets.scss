@@ -20,15 +20,14 @@
     &__surface {
         display: none;
         @include mq(large) {
-            width: rem(163px);
+            width:  rem(163px);
             height: rem(199px);
             display: initial;
             position: absolute;
-            top: rem(554px);
+            top:  rem(554px);
             left: rem(399px);
         }
     }
-
     // Mercury
     &__overview--mercury {
             width:  rem(111px);
@@ -44,7 +43,6 @@
             left: rem(335px);
         }
     }
-
     // Venus
     &__overview--venus {
             width:  rem(154px);
@@ -60,7 +58,6 @@
             left: rem(280px);
         }
     }
-
     // Earth
     &__overview--earth {
             width:  rem(173px);
@@ -76,7 +73,6 @@
             left: rem(255px);
         }
     }
-
     // Mars
     &__overview--mars {
             width:  rem(129px);
@@ -92,7 +88,6 @@
             left: rem(312px);
         }
     }
-
      // Jupiter
      &__overview--jupiter {
             width:  rem(224px);
@@ -108,7 +103,6 @@
             left: rem(189px);
         }
     }
-
     // Saturn
     &__overview--saturn {
             width:  rem(256px);
@@ -124,7 +118,6 @@
             left: rem(146.95px);
         }
     }
-
     // Uranus
     &__overview--uranus {
             width:  rem(176px);
@@ -140,18 +133,19 @@
             left: rem(251px);
         }
     }
-
     // Neptune
     &__overview--neptune {
-            width:  175px;
-            height: 175px;
+            width:  rem(173px);
+            height: rem(173px);
         @include mq(medium) {
-            width:  285px;
-            height: 285px;
+            width:  rem(285px);
+            height: rem(285px);
         }
         @include mq(large) {
-            width:  450px;
-            height: 450px;  
+            width:  rem(450px);
+            height: rem(450px);  
+            top:  rem(248px);
+            left: rem(255px);
         }
     }
 }
