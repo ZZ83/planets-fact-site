@@ -74,7 +74,7 @@
             letter-spacing: rem(1px);
         }
         @include mq(large) {
-            line-height: rem(80px);
+            line-height: rem(81px);
             border-top: 4px solid transparent;
         }
         &:hover {
