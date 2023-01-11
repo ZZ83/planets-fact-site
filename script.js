@@ -19,4 +19,3 @@ function openSlideMenu() {
     }
 }
 document.querySelector('.mobile-nav-button').addEventListener("click", openSlideMenu);
-    

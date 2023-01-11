@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.mobile-nav-button {
+    width:  rem(24px);
+    height: rem(17px);
+    margin-left: auto;
+    margin-top: rem(4px);
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    @include mq(medium) {
+        display: none; 
+    }
+    &__menu {
+        fill: $primary-text-color;
+    }
+    &__menu--open {
+        fill: $secondary-text-color;
+    }
+}

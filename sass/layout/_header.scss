@@ -4,7 +4,6 @@
     height: rem(68px);
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     width: calc(100% - rem(48px));
     margin: 0 auto;
     @include mq(medium) {
@@ -13,47 +12,13 @@
         flex-direction: column;
         width: calc(100% - rem(104px));
     }
-    // @include mq(large) {
-    //     flex-direction: row;
-    // }
-}
-
-.mobile-nav-button {
-    width:  rem(24px);
-    height: rem(17px);
-    margin-left: auto;
-    margin-top: rem(4px);
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    @include mq(medium) {
-        display: none; 
-    }
-    &__menu {
-        fill: $primary-text-color;
-    }
-    &__menu--open {
-        fill: $secondary-text-color;
+    @include mq(large) {
+        height: rem(85px);
+        max-width: rem(1360px);
+        flex-direction: row;
     }
 }
 
 .header-underline {
     border-bottom: 1px solid $secondary-text-color;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

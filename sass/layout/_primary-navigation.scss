@@ -17,7 +17,7 @@
         top: 0;
     }
     @include mq(large) {
-        // width: 62%;
+        width: rem(665px);
         margin-left: auto;
     }
     &__inner {
@@ -73,6 +73,7 @@
             letter-spacing: rem(1px);
         }
         @include mq(large) {
+            line-height: rem(80px);
             border-top: 4px solid transparent;
         }
         &:hover {
