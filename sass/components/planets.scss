@@ -33,15 +33,15 @@
 
     // Mercury
     &__overview--mercury {
-            width:  115px;
-            height: 115px;
+            width:  rem(111px);
+            height: rem(111px);
         @include mq(medium) {
-            width:  185px;
-            height: 185px;
+            width:  rem(184px);
+            height: rem(184px);
         }
         @include mq(large) {
-            width:  290px;
-            height: 290px;  
+            width:  rem(290px);
+            height: rem(290px);  
         }
     }
 
@@ -147,5 +147,4 @@
             height: 450px;  
         }
     }
-
 }

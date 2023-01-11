@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
 
 .stats {
-    // background-color: orange;
     width: calc(100% - rem(48px));
     height: rem(216px);
     margin: 0 auto;
@@ -37,7 +36,7 @@
         }
         @include mq(large) {
             padding: 0 rem(24px);
-           height: rem(128px);
+            height: rem(128px);
         }
     }
     &__heading {

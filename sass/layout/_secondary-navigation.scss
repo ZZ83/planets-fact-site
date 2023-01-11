@@ -1,9 +1,8 @@
 @use '../abstracts' as *;
 
 .secondary-navigation {
-    padding: 0 5%;
     &__list {
-        height: 100%;
+        height: rem(50px);
         display: flex;
         justify-content: space-between; 
         @include mq(medium) {
@@ -14,21 +13,23 @@
         display: flex;
         align-items: center;
         font-weight: 700;
-        font-size: 0.595rem;
-        letter-spacing: 2.5px;
+        font-size: rem(9px);
+        line-height: rem(43px);
+        letter-spacing: rem(1.93px);
         text-transform: uppercase;
-        line-height: 42px;
-        border-top:    6px solid transparent;
-        border-bottom: 6px solid transparent;
+        border-top:    4px solid transparent;
+        border-bottom: 4px solid transparent;
         color: $secondary-text-color;
         @include mq(medium) {
             height: 52px;
+            line-height: rem(25px);
             padding-left: 1rem;
             border: 2px solid $secondary-color;
             color: $primary-text-color;
         }
         @include mq(large) {
-            font-size: 0.723rem;
+            font-size: rem(12px);
+            letter-spacing: rem(2.57px);
             &:hover {
                 border-color: transparent;
                 background-color: $secondary-color;
@@ -58,8 +59,9 @@
 .secondary-navigation-underline {
     left: 0;
     right: 0;
-    top: 129px;
+    top: rem(119px);
     position: absolute;
+    z-index: -1;
     border-bottom: 1px solid $secondary-text-color;
     @include mq(medium) {
         display: none;
@@ -69,7 +71,7 @@
 @each $name, $value in $colors {
     .#{$name} {
         color: $primary-text-color;
-        border-bottom: 6px solid $value;
+        border-bottom: 4px solid $value;
         @include mq(medium) {
             background-color: $value;
             border-color: transparent;

@@ -1,28 +1,35 @@
 @use '../abstracts' as *;
 
 .description {
-    margin: auto;
+    margin: 0 auto rem(28px);
     text-align: center;
     @include mq(medium) {
         text-align: left;
     }
     &__link {
         font-weight: 700;
+        font-size: rem(12px);
+        line-height: rem(25px);
         color: $secondary-text-color;
         span {
             font-weight: 400;
         }
+        @include mq(large) {
+            font-size: rem(14px);
+        }
     }
     &__summary {
-        margin-bottom: 3rem;
         p {
-            margin: 1.2rem 0 3rem;
+            margin: rem(16px) 0 rem(32px);
             @include mq(medium) {
-                margin-bottom: 2rem;
+                margin-top: rem(24px);
+            }
+            @include mq(large) {
+                margin-bottom: rem(24px);
             }
         }
         @include mq(medium) {
-            margin-top: 2rem;
+            
         }
     }
 }

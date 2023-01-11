@@ -37,6 +37,7 @@ strong {
 }
 
 h1 {
+    text-transform: uppercase;
     font-size: rem(40px);
     line-height: rem(52px);
     @include mq(medium) {
@@ -51,7 +52,6 @@ h1 {
 
 h2 {
     font-size: rem(20px);
-    // line-height: rem(20px);
     letter-spacing: rem(-0.75px);
     @include mq(medium) {
         font-size: rem(24px);
@@ -62,19 +62,6 @@ h2 {
         font-size: rem(40px);
         line-height: rem(52px);
         letter-spacing: rem(-1.5px);
-    } 
-}
-
-h3 {
-    font-size: rem(9px);
-    line-height: rem(10px);
-    letter-spacing: rem(1.93px);
-    @include mq(medium) {
-        line-height: rem(25px);
-    }
-    @include mq(large) {
-        font-size: rem(12px);
-        letter-spacing: rem(2.57px);
     } 
 }
 
