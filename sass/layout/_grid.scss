@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
 
 .main { 
-    // background-color: green;
     width: calc(100% - rem(48px));
     margin: 0 auto;
     display: grid;
@@ -22,6 +21,8 @@
         ;
     }
     @include mq(large) {
+        width: 100%;
+        column-gap: rem(30px);
         max-width: rem(1110px);
         margin-top: 7rem;
         grid-template-areas:
@@ -39,10 +40,6 @@
 .c {
     grid-area: c;
 }
-
 .d {
     grid-area: d;
 }
-
-
-

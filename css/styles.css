@@ -732,6 +732,7 @@ li {
     margin-bottom: 1.5rem;
   }
 }
+
 .header {
   height: 4.25rem;
   display: flex;
@@ -775,6 +776,8 @@ li {
 }
 @media (min-width: 1440px) {
   .main {
+    width: 100%;
+    column-gap: 1.875rem;
     max-width: 69.375rem;
     margin-top: 7rem;
     grid-template-areas: "c c c c c c c . d d d d" "c c c c c c c . a a a a";
@@ -1022,7 +1025,13 @@ li {
 }
 @media (min-width: 768px) {
   .secondary-navigation__list {
+    height: 9.5rem;
     flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  .secondary-navigation__list {
+    height: 11rem;
   }
 }
 .secondary-navigation__link {
@@ -1039,15 +1048,18 @@ li {
 }
 @media (min-width: 768px) {
   .secondary-navigation__link {
-    height: 52px;
+    height: 2.5rem;
     line-height: 1.5625rem;
     padding-left: 1rem;
-    border: 2px solid #38384F;
+    border-top: none;
+    border-bottom: none;
+    border: 1px solid #38384F;
     color: #ffffff;
   }
 }
 @media (min-width: 1440px) {
   .secondary-navigation__link {
+    height: 3rem;
     font-size: 0.75rem;
     letter-spacing: 0.160625rem;
   }
@@ -1102,8 +1114,7 @@ li {
   .mercury {
     background-color: #419EBB;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1120,8 +1131,7 @@ li {
   .venus {
     background-color: #EDA249;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1138,8 +1148,7 @@ li {
   .earth {
     background-color: #6f2ed6;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1156,8 +1165,7 @@ li {
   .mars {
     background-color: #D14C32;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1174,8 +1182,7 @@ li {
   .jupiter {
     background-color: #D83A34;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1192,8 +1199,7 @@ li {
   .saturn {
     background-color: #CD5120;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1210,8 +1216,7 @@ li {
   .uranus {
     background-color: #1ec2a4;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {
@@ -1228,8 +1233,7 @@ li {
   .neptune {
     background-color: #2d68f0;
     border-color: transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border: none;
   }
 }
 @media (min-width: 1440px) {

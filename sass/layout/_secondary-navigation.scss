@@ -6,7 +6,11 @@
         display: flex;
         justify-content: space-between; 
         @include mq(medium) {
+            height: rem(152px);
             flex-direction: column;  
+        }
+        @include mq(large) {
+            height: rem(176px);
         }
     }
     &__link {
@@ -21,13 +25,16 @@
         border-bottom: 4px solid transparent;
         color: $secondary-text-color;
         @include mq(medium) {
-            height: 52px;
+            height: rem(40px);
             line-height: rem(25px);
             padding-left: 1rem;
-            border: 2px solid $secondary-color;
+            border-top:    none;
+            border-bottom: none;
+            border: 1px solid $secondary-color;
             color: $primary-text-color;
         }
         @include mq(large) {
+            height: rem(48px);
             font-size: rem(12px);
             letter-spacing: rem(2.57px);
             &:hover {
@@ -75,8 +82,9 @@
         @include mq(medium) {
             background-color: $value;
             border-color: transparent;
-            border-top:    6px solid transparent;
-            border-bottom: 6px solid transparent;
+            border: none;
+            // border-top:    6px solid transparent;
+            // border-bottom: 6px solid transparent;
         }
         @include mq(large) {
             &:hover {
