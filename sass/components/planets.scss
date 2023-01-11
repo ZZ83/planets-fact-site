@@ -79,15 +79,17 @@
 
     // Mars
     &__overview--mars {
-            width:  130px;
-            height: 130px;
+            width:  rem(129px);
+            height: rem(129px);
         @include mq(medium) {
-            width:  215px;
-            height: 215px;
+            width:  rem(213px);
+            height: rem(213px);
         }
         @include mq(large) {
-            width:  335px;
-            height: 335px;  
+            width:  rem(336px);
+            height: rem(336px);  
+            top: rem(305px);
+            left: rem(312px);
         }
     }
 

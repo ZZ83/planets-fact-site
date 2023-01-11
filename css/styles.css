@@ -568,19 +568,21 @@ li {
   }
 }
 .planet__overview--mars {
-  width: 130px;
-  height: 130px;
+  width: 8.0625rem;
+  height: 8.0625rem;
 }
 @media (min-width: 768px) {
   .planet__overview--mars {
-    width: 215px;
-    height: 215px;
+    width: 13.3125rem;
+    height: 13.3125rem;
   }
 }
 @media (min-width: 1440px) {
   .planet__overview--mars {
-    width: 335px;
-    height: 335px;
+    width: 21rem;
+    height: 21rem;
+    top: 19.0625rem;
+    left: 19.5rem;
   }
 }
 .planet__overview--jupiter {
