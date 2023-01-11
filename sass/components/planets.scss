@@ -95,15 +95,17 @@
 
      // Jupiter
      &__overview--jupiter {
-            width:  225px;
-            height: 225px;
+            width:  rem(224px);
+            height: rem(224px);
         @include mq(medium) {
-            width:  370px;
-            height: 370px;
+            width:  rem(369px);
+            height: rem(369px);
         }
         @include mq(large) {
-            width:  500px;
-            height: 500px;  
+            width:  rem(582px);
+            height: rem(582px); 
+            top: rem(182px);
+            left: rem(189px);
         }
     }
 

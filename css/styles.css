@@ -586,19 +586,21 @@ li {
   }
 }
 .planet__overview--jupiter {
-  width: 225px;
-  height: 225px;
+  width: 14rem;
+  height: 14rem;
 }
 @media (min-width: 768px) {
   .planet__overview--jupiter {
-    width: 370px;
-    height: 370px;
+    width: 23.0625rem;
+    height: 23.0625rem;
   }
 }
 @media (min-width: 1440px) {
   .planet__overview--jupiter {
-    width: 500px;
-    height: 500px;
+    width: 36.375rem;
+    height: 36.375rem;
+    top: 11.375rem;
+    left: 11.8125rem;
   }
 }
 .planet__overview--saturn {
