@@ -1,11 +1,11 @@
 @use '../abstracts' as *;
 
 .planet {
-    height: 300px;
+    height: rem(300px);
     display: flex;
     flex-direction: column;
     @include mq(medium) {
-       height: 450px;
+       height: rem(450px);
     }
     @include mq(large) {
         height: auto;
@@ -15,23 +15,17 @@
         margin: auto;
         @include mq(large) {
             position: absolute;
-            
         }
     }
     &__surface {
         display: none;
         @include mq(large) {
-            width: 163px;
-            height: 199px;
+            width: rem(163px);
+            height: rem(199px);
             display: initial;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-            text-align: center;
             position: absolute;
-            padding-left: 2px;
-            top: 65%;
+            top: rem(554px);
+            left: rem(399px);
         }
     }
 
@@ -46,23 +40,24 @@
         @include mq(large) {
             width:  rem(290px);
             height: rem(290px);  
-            
-            left: 335px;
-            top: 328px;
+            top: rem(328px);
+            left: rem(335px);
         }
     }
 
     // Venus
     &__overview--venus {
-            width:  155px;
-            height: 155px;
+            width:  rem(154px);
+            height: rem(154px);
         @include mq(medium) {
-            width:  255px;
-            height: 255px;
+            width:  rem(253px);
+            height: rem(253px);
         }
         @include mq(large) {
-            width:  400px;
-            height: 400px;  
+            width:  rem(400px);
+            height: rem(400px);
+            top: rem(273px);
+            left: rem(280px);
         }
     }
 
@@ -119,13 +114,8 @@
         @include mq(large) {
             width:  rem(667px);
             height: rem(667px);  
-            left: 146.95px;
-            top: 155.95px;
-        }
-    }
-    &__surface--saturn {
-        @include mq(large) {
-            top: 60%;
+            top: rem(155.95px);
+            left: rem(146.95px);
         }
     }
 

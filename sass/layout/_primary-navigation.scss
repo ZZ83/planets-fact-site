@@ -89,11 +89,6 @@
             display: none;
         }
     }
-    @each $name, $value in $mobile-colors {
-        &__planet--#{$name} {
-            background-color: $value;
-        }
-    }
     @each $name, $value in $colors {
         &__link--#{$name} {
             &:hover {
