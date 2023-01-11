@@ -12,9 +12,9 @@
         height: auto;
         flex-direction: row;
         gap: rem(11px);
+        max-width: rem(1110px);
     }
     @include mq(large) {
-        max-width: rem(1110px);
         gap: rem(30px);
         margin-top: rem(87px);
     }

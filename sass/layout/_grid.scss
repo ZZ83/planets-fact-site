@@ -14,6 +14,7 @@
     ;
     @include mq(medium) {
         width: calc(100% - rem(80px));
+        max-width: rem(1110px);
         grid-template-areas:
             "c c c c c c c c c c c c"
             "b b b b b b b b b b b b"
@@ -24,7 +25,6 @@
         width: 100%;
         height: rem(541px);
         column-gap: rem(30px);
-        max-width: rem(1110px);
         margin-top: rem(126px);
         grid-template-areas:
             "c c c c c c c . d d d d"

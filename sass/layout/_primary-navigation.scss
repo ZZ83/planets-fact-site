@@ -15,6 +15,7 @@
         padding: 0;
         position: initial;
         top: 0;
+        max-width: rem(865px);
     }
     @include mq(large) {
         width: rem(665px);

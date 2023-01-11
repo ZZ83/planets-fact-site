@@ -672,11 +672,11 @@ li {
     height: auto;
     flex-direction: row;
     gap: 0.6875rem;
+    max-width: 69.375rem;
   }
 }
 @media (min-width: 1440px) {
   .stats {
-    max-width: 69.375rem;
     gap: 1.875rem;
     margin-top: 5.4375rem;
   }
@@ -799,6 +799,7 @@ li {
 @media (min-width: 768px) {
   .main {
     width: calc(100% - 5rem);
+    max-width: 69.375rem;
     grid-template-areas: "c c c c c c c c c c c c" "b b b b b b b b b b b b" "d d d d d d . a a a a a";
   }
 }
@@ -807,7 +808,6 @@ li {
     width: 100%;
     height: 33.8125rem;
     column-gap: 1.875rem;
-    max-width: 69.375rem;
     margin-top: 7.875rem;
     grid-template-areas: "c c c c c c c . d d d d" "c c c c c c c . a a a a";
   }
@@ -846,6 +846,7 @@ li {
     padding: 0;
     position: initial;
     top: 0;
+    max-width: 54.0625rem;
   }
 }
 @media (min-width: 1440px) {
